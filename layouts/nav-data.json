@@ -1,0 +1,422 @@
+{
+  "topLevelItems": [
+    { "name": "Start", "path": "/start-business" },
+    { "name": "Manage", "path": "/manage-business" },
+    { "name": "Expand", "path": "/expand-business" },
+    { "name": "Grow", "path": "/services" },
+    { "name": "Industry", "path": "/industry" },
+    { "name": "Platform", "path": "/platforms" },
+    { "name": "Who we are", "path": "/about" }
+  ],
+
+  "whoWeAre": [
+    {
+      "icon": "FaTrademark",
+      "items": [
+        { "label": "Brand", "path": "/about/brand/" },
+        { "label": "Leadership", "path": "/about/leadership" },
+        { "label": "Team", "path": "/about/teams" },
+        { "label": "Award & Certification", "path": "/about/awards" },
+        { "label": "Partners", "path": "/about/partners" },
+        { "label": "Community", "path": "/about/community" },
+        { "label": "Sustainability", "path": "/about/sustainability" },
+        { "label": "Inclusion", "path": "/about/inclusion" },
+        { "label": "Values", "path": "/about/values" }
+      ]
+    }
+  ],
+
+  "manageBusiness": [
+    {
+      "icon": "FaBuilding",
+      "title": "Office Setup Planning",
+      "items": [
+        { "label": "Virtual Office", "path": "/manage-business/office/virtual-office" },
+        { "label": "Flex/Fixed Desk/Co Working Space", "path": "/manage-business/office/coworking-space" },
+        { "label": "Meeting Room", "path": "/manage-business/office/meeting-room" },
+        { "label": "Facility Management", "path": "/manage-business/office/facility-management" }
+      ]
+    },
+    {
+      "icon": "FaUsers",
+      "title": "People & Project Planning",
+      "items": [
+        { "label": "Hiring/Recruitment/Employee Onboarding", "path": "/manage-business/people/hiring-recruitment" },
+        { "label": "Payroll Management", "path": "/manage-business/people/payroll-management" },
+        { "label": "People Management", "path": "/manage-business/people/people-management" },
+        { "label": "Project Management", "path": "/manage-business/people/project-management" },
+        { "label": "Employee Employer Engagement", "path": "/manage-business/people/employee-engagement" },
+        { "label": "Employee Finance Management", "path": "/manage-business/people/employee-finance" }
+      ]
+    },
+    {
+      "icon": "FaPalette",
+      "title": "Product Design & Planning",
+      "items": [
+        { "label": "MVP Designing", "path": "/manage-business/product/mvp-designing" },
+        { "label": "PMF Planning", "path": "/manage-business/product/pmf-planning" },
+        { "label": "Concept Creation", "path": "/manage-business/product/concept-creation" },
+        { "label": "Training & Assessment", "path": "/manage-business/product/training-assessment" }
+      ]
+    },
+    {
+      "icon": "FaChartBar",
+      "title": "Strategic Planning",
+      "items": [
+        { "label": "Strategic Decision-Making and Planning", "path": "/manage-business/strategy/decision-making" },
+        { "label": "Funding and Capital Structure Advisory", "path": "/manage-business/strategy/funding-advisory" },
+        { "label": "Financial Strategy and Planning", "path": "/manage-business/strategy/financial-planning" }
+      ]
+    },
+    {
+      "icon": "FaFileInvoiceDollar",
+      "title": "Performance Management",
+      "items": [
+        { "label": "Cost Management", "path": "/manage-business/performance/cost-management" },
+        { "label": "Cash Flow Management", "path": "/manage-business/performance/cash-flow" },
+        { "label": "Budgeting and Forecasting", "path": "/manage-business/performance/budgeting" }
+      ]
+    },
+    {
+      "icon": "FaIdea",
+      "title": "Tax Planning and Compliance",
+      "items": [
+        { "label": "Tax Planning and Investment Advisory", "path": "/manage-business/tax/tax-planning" },
+        { "label": "CA Services", "path": "/manage-business/tax/ca-services" }
+      ]
+    }
+  ],
+
+  "services": [
+    {
+      "icon": "FaHandshake",
+      "title": "Consulting as a Service",
+      "items": [
+        { "label": "Business Consulting", "path": "/services/consulting/business-consulting" },
+        { "label": "Systems Integration", "path": "/services/consulting/systems-integration" },
+        { "label": "Managed IT Services", "path": "/services/consulting/managed-it-services" },
+        { "label": "Application Services", "path": "/services/consulting/application-services" },
+        { "label": "Infrastructure Services", "path": "/services/consulting/infrastructure-services" },
+        { "label": "Business Process Services", "path": "/services/consulting/business-process-services" }
+      ]
+    },
+    {
+      "icon": "FaServer",
+      "title": "Technology as a Service",
+      "items": [
+        { "label": "Artificial Intelligence", "path": "/services/technology/artificial-intelligence" },
+        { "label": "Data & Analytics", "path": "/services/technology/data-analytics" },
+        { "label": "Cloud As a Service", "path": "/services/technology/cloud-service" },
+        { "label": "Cognitive Business Operations", "path": "/services/technology/cognitive-operations" },
+        { "label": "Cybersecurity", "path": "/services/technology/cybersecurity" },
+        { "label": "Enterprise Solutions IoT", "path": "/services/technology/enterprise-iot" },
+        { "label": "Digital Engineering", "path": "/services/technology/digital-engineering" },
+        { "label": "Network Solutions and Services", "path": "/services/technology/network-solutions" },
+        { "label": "Sustainability Services", "path": "/services/technology/sustainability-services" }
+      ]
+    },
+    {
+      "icon": "FaUserAstronaut",
+      "title": "Talent-as-a-Service",
+      "items": [
+        { "label": "Talent Solutions", "path": "/services/talent/talent-solutions" }
+      ]
+    },
+    {
+      "icon": "FaCode",
+      "title": "Development as a Service",
+      "sections": [
+        {
+          "heading": "Web App",
+          "key": "web-app",
+          "items": [
+            { "label": "Static Website Development", "path": "/services/development/web/static-website" },
+            { "label": "Dynamic Website Development", "path": "/services/development/web/dynamic-website" },
+            { "label": "E-commerce Website Development", "path": "/services/development/web/ecommerce-website" },
+            { "label": "CRM Website or Portal Development", "path": "/services/development/web/crm-portal" }
+          ]
+        },
+        {
+          "heading": "Mobile App",
+          "key": "mobile-app",
+          "items": [
+            { "label": "Mobile Application Development", "path": "/services/development/mobile/app-development" },
+            { "label": "Custom Software Development", "path": "/services/development/mobile/custom-software" }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "FaBullhorn",
+      "title": "Marketing as a Service",
+      "items": [
+        { "label": "SEO (Search Engine Optimization)", "path": "/services/marketing/seo" },
+        { "label": "SMS & Email Marketing", "path": "/services/marketing/sms-email" },
+        { "label": "WhatsApp Marketing", "path": "/services/marketing/whatsapp" },
+        { "label": "Lead Generation", "path": "/services/marketing/lead-generation" },
+        { "label": "Blue Tick / Social Verification Services", "path": "/services/marketing/social-verification" },
+        { "label": "Telecom Display Name Services", "path": "/services/marketing/telecom-display" },
+        { "label": "Information & Broadcasting", "path": "/services/marketing/information-broadcasting" }
+      ]
+    },
+    {
+      "icon": "FaPaintBrush",
+      "title": "Design as a Service",
+      "items": [
+        { "label": "Logo Design", "path": "/services/design/logo-design" },
+        { "label": "Product Catalogue Design", "path": "/services/design/product-catalogue" },
+        { "label": "Presentation", "path": "/services/design/presentation" },
+        { "label": "Infographic / Animation Video", "path": "/services/design/infographic-video" },
+        { "label": "Product Video", "path": "/services/design/product-video" },
+        { "label": "Graphic Design", "path": "/services/design/graphic-design" }
+      ]
+    }
+  ],
+
+  "industry": [
+    {
+      "icon": "FaChartLine",
+      "title": "Financial Services",
+      "items": [
+        { "label": "Banking Capital Markets", "path": "/industry/banking-capital-markets" },
+        { "label": "Insurance", "path": "/industry/insurance" }
+      ]
+    },
+    {
+      "icon": "FaBullhorn",
+      "title": "Media & Education",
+      "items": [
+        { "label": "Communications, Media, and Information Services", "path": "/industry/communications-media-information-services" },
+        { "label": "Education", "path": "/industry/education" }
+      ]
+    },
+    {
+      "icon": "FaCog",
+      "title": "Resources & Sustainability",
+      "items": [
+        { "label": "Environment", "path": "/industry/environment" },
+        { "label": "Energy, Resources, and Utilities", "path": "/industry/energy-resources-utilities" },
+        { "label": "Manufacturing", "path": "/industry/manufacturing" }
+      ]
+    },
+    {
+      "icon": "FaShoppingBag",
+      "title": "Health & Public",
+      "items": [
+        { "label": "Healthcare", "path": "/industry/healthcare" },
+        { "label": "Life Sciences", "path": "/industry/life-sciences" },
+        { "label": "Public Services", "path": "/industry/public-services" },
+        { "label": "Retail", "path": "/industry/retail" },
+        { "label": "Travel and Logistics", "path": "/industry/travel-logistics" }
+      ]
+    }
+  ],
+
+  "platforms": [
+    {
+      "icon": "FaPiggyBank",
+      "title": "Products",
+      "items": [
+        { "label": "Consysmind", "path": "/platforms/products/consys" },
+        { "label": "Y2f Hub", "path": "/platforms/products/ytof" },
+        { "label": "IVR Bookings", "path": "/platforms/products/ivr" },
+        { "label": "IB Network", "path": "/platforms/products/ib" }
+      ]
+    },
+    {
+      "icon": "FaGift",
+      "title": "Realtime Events",
+      "items": [
+        { "label": "TESK Event", "path": "/platforms/plans/rewards-hub" },
+        { "label": "CXO Meet Event", "path": "/platforms/plans/rewards-123" },
+        { "label": "FIIACON - Future Innovation Industry Award Conference", "path": "/platforms/plans/suraksha" },
+        { "label": "Smart Code Warrior", "path": "/platforms/plans/traveller" },
+        { "label": "WCR - World Cyber Rready Hackathon", "path": "/platforms/plans/traveller" },
+        { "label": "Pro Talent Championship", "path": "/platforms/plans/traveller" }
+      ]
+    },
+    {
+      "icon": "FaShieldAlt",
+      "title": "Communication Suits",
+      "items": [
+        { "label": "Customer Communication Manager", "path": "/platforms/security/safe-pay" },
+        { "label": "Marketing Automation Tool Organiser", "path": "/platforms/security/fraud-alarm" }
+      ]
+    },
+    {
+      "icon": "FaMoneyCheckAlt",
+      "title": "Data Management",
+      "items": [
+        { "label": "Intelligent Data Management", "path": "/platforms/payments/auto" },
+        { "label": "Customer Identity Management", "path": "/platforms/payments/recharges" },
+        { "label": "Utility Bill Payments", "path": "/platforms/payments/bills" }
+      ]
+    },
+    {
+      "icon": "FaMoneyCheckAlt",
+      "title": "Low code App Development",
+      "items": [
+        { "label": "Low code App Development", "path": "/platforms/payments/auto" }
+      ]
+    },
+    {
+      "icon": "FaMoneyCheckAlt",
+      "title": "Alliance Products",
+      "items": [
+        { "label": "Alliance Products", "path": "/platforms/payments/auto" }
+      ]
+    }
+  ],
+
+  "start": [
+    {
+      "icon": "FaLightbulb",
+      "title": "Generate Idea",
+      "items": [
+        { "label": "Generate Your Business Idea", "path": "/generate" }
+      ]
+    },
+    {
+      "icon": "FaBuilding",
+      "title": "Incorporate Business",
+      "items": [
+        { "label": "Sole Proprietorship", "path": "/start/incorporate/sole-proprietorship" },
+        { "label": "Partnership Registration", "path": "/start/incorporate/partnership-registration" },
+        { "label": "Private Limited Company Registration", "path": "/start/incorporate/private-limited-company-registration" },
+        { "label": "LLP Registration", "path": "/start/incorporate/llp-registration" },
+        { "label": "One Person Company Registration", "path": "/start/incorporate/one-person-company-registration" },
+        { "label": "Section 8 Company (NGO)", "path": "/start/incorporate/section-8-company-ngo" },
+        { "label": "Trust Registration", "path": "/start/incorporate/trust-registration" },
+        { "label": "Society Registration", "path": "/start/incorporate/society-registration" },
+        { "label": "Nidhi Company Registration", "path": "/start/incorporate/nidhi-company-registration" },
+        { "label": "Dubai Business Registration", "path": "/start/incorporate/dubai-business-registration" },
+        { "label": "Foreign Subsidiary", "path": "/start/incorporate/foreign-subsidiary" }
+      ]
+    },
+    {
+      "icon": "FaFileAlt",
+      "title": "License Business",
+      "sections": [
+        {
+          "heading": "Licenses",
+          "key": "licenses",
+          "items": [
+            { "label": "IECI (Import & Export) Registration", "path": "/start/license/iec-import-export-registration" },
+            { "label": "FSSAI License & Registration", "path": "/start/license/fssai-license-registration" },
+            { "label": "Trade Licenses", "path": "/start/license/trade-licenses" },
+            { "label": "Factory Licenses", "path": "/start/license/factory-licenses" }
+          ]
+        },
+        {
+          "heading": "Certifications",
+          "key": "certifications",
+          "items": [
+            { "label": "Start-up India Registration", "path": "/start/license/startup-india-registration" },
+            { "label": "MSME Udyam Registration", "path": "/start/license/msme-udyam-registration" },
+            { "label": "ISO Certification", "path": "/start/license/iso-certification" },
+            { "label": "Make in India (MII) Certificate for GeM", "path": "/start/license/make-in-india-mii-gem" }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "FaBalanceScale",
+      "title": "Tax & Statutory",
+      "items": [
+        { "label": "GST Registration", "path": "/start/tax/gst-registration" },
+        { "label": "PAN/TAN Application", "path": "/start/tax/pan-tan-application" },
+        { "label": "12A and 80G Registration", "path": "/start/tax/12a-80g-registration" },
+        { "label": "RCMC Registration", "path": "/start/tax/rcmc-registration" },
+        { "label": "Shop & Establishment Registration", "path": "/start/tax/shop-establishment-registration" },
+        { "label": "Professional Tax", "path": "/start/tax/professional-tax" },
+        { "label": "PF Registration", "path": "/start/tax/pf-registration" },
+        { "label": "ESIC Registration", "path": "/start/tax/esic-registration" }
+      ]
+    },
+    {
+      "icon": "FaFileAlt",
+      "title": "File Your Business",
+      "items": [
+        { "label": "Accounting & Taxation", "path": "/start/file/accounting-taxation" },
+        { "label": "Accounting & Book Keeping", "path": "/start/file/accounting-book-keeping" },
+        { "label": "GST Filings", "path": "/start/file/gst-filings" },
+        { "label": "File or Claim your TDS / With Holding Tax", "path": "/start/file/tds-withholding-tax" },
+        { "label": "Income Tax Returns", "path": "/start/file/income-tax-returns" }
+      ]
+    },
+    {
+      "icon": "FaGavel",
+      "title": "Legally Strong your Business",
+      "sections": [
+        {
+          "heading": "IPR & Trademark",
+          "key": "ipr-trademark",
+          "items": [
+            { "label": "Trademark Registration", "path": "/start/legal/ipr/trademark-registration" },
+            { "label": "Trademark Objection", "path": "/start/legal/ipr/trademark-objection" },
+            { "label": "Patent Registration", "path": "/start/legal/ipr/patent-registration" },
+            { "label": "Copyright Registration", "path": "/start/legal/ipr/copyright-registration" }
+          ]
+        },
+        {
+          "heading": "Legal Agreements",
+          "key": "legal-agreements",
+          "items": [
+            { "label": "Code of Conduct", "path": "/start/legal/agreements/code-of-conduct" },
+            { "label": "Company Policy", "path": "/start/legal/agreements/company-policy" },
+            { "label": "Employment Entry/Exit Agreement", "path": "/start/legal/agreements/employment-entry-exit-agreement" },
+            { "label": "Memorandum of Understanding", "path": "/start/legal/agreements/mou" },
+            { "label": "Letter of Intent", "path": "/start/legal/agreements/letter-of-intent" },
+            { "label": "Customer or Vendor Agreement", "path": "/start/legal/agreements/customer-vendor-agreement" },
+            { "label": "Terms of Use Agreement", "path": "/start/legal/agreements/terms-of-use-agreement" },
+            { "label": "Founders Agreement", "path": "/start/legal/agreements/founders-agreement" },
+            { "label": "Non Disclosure Agreement", "path": "/start/legal/agreements/nda" },
+            { "label": "Transfer Pricing Agreement", "path": "/start/legal/agreements/transfer-pricing-agreement" },
+            { "label": "Privacy Policy Agreement", "path": "/start/legal/agreements/privacy-policy-agreement" },
+            { "label": "Fair Use Policy Agreement", "path": "/start/legal/agreements/fair-use-policy-agreement" },
+            { "label": "End User License Agreement (EULA)", "path": "/start/legal/agreements/eula" },
+            { "label": "Developer-Owner Agreement", "path": "/start/legal/agreements/developer-owner-agreement" },
+            { "label": "Service Level Agreement", "path": "/start/legal/agreements/service-level-agreement" },
+            { "label": "Master Service Agreement", "path": "/start/legal/agreements/master-service-agreement" },
+            { "label": "Product Sale or Acquire Agreement", "path": "/start/legal/agreements/product-sale-or-acquire-agreement" }
+          ]
+        }
+      ]
+    },
+    {
+      "icon": "FaHandHoldingUsd",
+      "title": "Fund Your Business",
+      "sections": [
+        {
+          "heading": "Fundraising Documentation",
+          "key": "fund-docs",
+          "items": [
+            { "label": "Fundraising Services – VCs or HNIs", "path": "/start/fund/fundraising-documentation/vcs-or-hnis" },
+            { "label": "Startup Grants/Loans", "path": "/start/fund/fundraising-documentation/startup-grants-loans" },
+            { "label": "Valuation Certificate", "path": "/start/fund/fundraising-documentation/valuation-certificate" },
+            { "label": "Financial Projections Services", "path": "/start/fund/fundraising-documentation/financial-projections-services" },
+            { "label": "Pitch Deck for Investors", "path": "/start/fund/fundraising-documentation/pitch-deck-for-investors" },
+            { "label": "Detailed Project Report (DPR) Services", "path": "/start/fund/fundraising-documentation/dpr-services" }
+          ]
+        },
+        {
+          "heading": "Fundraising Compliance",
+          "key": "fund-compliance",
+          "items": [
+            { "label": "Secretarial Compliance (Fundraising)", "path": "/start/fund/fundraising-compliance/secretarial-compliance-fundraising" },
+            { "label": "Fundraising Secretarial Compliance", "path": "/start/fund/fundraising-compliance/fundraising-secretarial-compliance" },
+            { "label": "Term Sheet and SHA", "path": "/start/fund/fundraising-compliance/term-sheet-and-sha" },
+            { "label": "Due Diligence", "path": "/start/fund/fundraising-compliance/due-diligence" }
+          ]
+        },
+        {
+          "heading": "Fundraising Advisory",
+          "key": "fund-advisory",
+          "items": [
+            { "label": "Government Grant Advisory Services", "path": "/start/fund/fundraising-advisory/government-grant-advisory-services" }
+          ]
+        }
+      ]
+    }
+  ]
+}

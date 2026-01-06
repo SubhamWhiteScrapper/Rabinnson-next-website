@@ -1,0 +1,399 @@
+// components/Navigation.tsx
+"use client"
+import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { ChevronDown } from "lucide-react";
+import { getIconComponent } from "./iconUtils";
+import navData from "./nav-data.json";
+
+// Types
+interface LinkItem {
+  label: string;
+  path: string;
+}
+
+interface MenuSection {
+  heading: string;
+  key: string;
+  items: LinkItem[];
+}
+
+interface MenuBlock {
+  icon: string;
+  title: string;
+  items?: LinkItem[];
+  sections?: MenuSection[];
+}
+
+interface NavItem {
+  name: string;
+  path: string;
+}
+
+// Import JSON data with proper typing
+const {
+  topLevelItems,
+  whoWeAre,
+  manageBusiness,
+  services,
+  industry,
+  platforms,
+  start
+} = navData as {
+  topLevelItems: NavItem[];
+  whoWeAre: MenuBlock[];
+  manageBusiness: MenuBlock[];
+  services: MenuBlock[];
+  industry: MenuBlock[];
+  platforms: MenuBlock[];
+  start: MenuBlock[];
+};
+
+/* ---------------- COLLAPSIBLE SECTION COMPONENT --------------- */
+
+function CollapsibleSection({ section }: { section: MenuSection }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="space-y-1.5">
+      <button
+        type="button"
+        onClick={() => setOpen((prev) => !prev)}
+        className="w-full flex items-center justify-between text-left text-[13px] uppercase tracking-[0.12em] text-[#858585] hover:text-white transition-colors"
+      >
+        <span>{section.heading}</span>
+        <ChevronDown
+          className={`w-3 h-3 ml-2 transition-transform duration-150 ${
+            open ? "rotate-180" : "rotate-0"
+          }`}
+        />
+      </button>
+
+      {open && (
+        <div className="space-y-1.5 mt-1">
+          {section.items.map((link, j) => (
+            <Link
+              key={j}
+              href={link.path}
+              className="block text-[14px] leading-[1.4] transition-colors text-[#C7C7C7] hover:text-white"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ---------------- MEGA MENU RENDERER COMPONENT --------------- */
+
+interface MegaMenuProps {
+  menuData: MenuBlock[];
+  isActive: boolean;
+  menuKey: string;
+  width?: string;
+  columns?: number;
+  position?: "left" | "center" | "right" | "left-edge" | "right-edge";
+  offsetX?: number;
+  alignTo?: "parent" | "screen" | "container";
+}
+
+function MegaMenuRenderer({
+  menuData,
+  isActive,
+  menuKey,
+  width = "960px",
+  columns = 3,
+  position = "center",
+  offsetX = 0,
+  alignTo = "parent"
+}: MegaMenuProps) {
+  const pathname = usePathname();
+  
+  const navLinkPath = menuKey === "start" ? "/start-business" : 
+                     menuKey === "whoWeAre" ? "/about" : 
+                     menuKey === "manageBusiness" ? "/manage-business" :
+                     menuKey === "services" ? "/services" :
+                     menuKey === "industry" ? "/industry" :
+                     menuKey === "platforms" ? "/platforms" : `/${menuKey}`;
+
+  const gridColumnsClass = columns === 3 ? "grid-cols-3" : 
+                          columns === 4 ? "grid-cols-4" : 
+                          "grid-cols-3";
+
+  const displayName = menuKey === "start" ? "Start" : 
+                     menuKey === "whoWeAre" ? "Who we are" :
+                     menuKey === "manageBusiness" ? "Manage" :
+                     menuKey === "services" ? "Grow" :
+                     menuKey === "industry" ? "Industry" :
+                     menuKey === "platforms" ? "Platform" : menuKey;
+
+  const parentRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const [menuStyle, setMenuStyle] = useState<React.CSSProperties>({});
+  const [isHovering, setIsHovering] = useState(false);
+
+  useEffect(() => {
+    const updatePosition = () => {
+      if (!parentRef.current || !menuRef.current) return;
+
+      const parentRect = parentRef.current.getBoundingClientRect();
+      const menuWidth = parseInt(width.replace('px', ''));
+      
+      let leftPosition = 0;
+
+      switch (position) {
+        case "left-edge":
+          leftPosition = 0;
+          break;
+        case "left":
+          leftPosition = 0;
+          break;
+        case "center":
+          leftPosition = parentRect.left + (parentRect.width / 2) - (menuWidth / 2);
+          break;
+        case "right":
+          leftPosition = parentRect.right - menuWidth;
+          break;
+        case "right-edge":
+          leftPosition = window.innerWidth - menuWidth;
+          break;
+        default:
+          leftPosition = parentRect.left + (parentRect.width / 2) - (menuWidth / 2);
+      }
+
+      leftPosition += offsetX;
+
+      if (alignTo === "screen") {
+        leftPosition = Math.max(0, Math.min(leftPosition, window.innerWidth - menuWidth));
+      }
+
+      setMenuStyle({
+        width: width,
+        left: `${leftPosition}px`,
+        position: 'fixed' as const,
+        top: `${parentRect.bottom + 12}px`
+      });
+    };
+
+    updatePosition();
+    window.addEventListener('resize', updatePosition);
+    
+    return () => window.removeEventListener('resize', updatePosition);
+  }, [width, position, offsetX, alignTo]);
+
+  return (
+    <div
+      ref={parentRef}
+      className="relative inline-flex items-center group"
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      <Link
+        href={navLinkPath}
+        className={`cursor-pointer text-[15px] tracking-[0.04em] uppercase transition-colors duration-200 flex items-center gap-1 ${
+          isActive ? "text-white font-semibold" : "text-[#8D8D8D] font-normal"
+        } hover:text-white`}
+      >
+        <span>{displayName}</span>
+        <ChevronDown className="w-3 h-3 ml-1 transition-transform duration-150 group-hover:rotate-180" />
+      </Link>
+
+      <div
+        ref={menuRef}
+        style={menuStyle}
+        className={`
+          fixed
+          rounded-3xl bg-[#111111]/95 border border-[#262626]
+          shadow-[0_32px_60px_rgba(0,0,0,0.80)]
+          py-6 px-0
+          transition-all duration-150 ease-out
+          backdrop-blur-md z-50
+          ${isHovering 
+            ? "opacity-100 translate-y-0 pointer-events-auto" 
+            : "opacity-0 translate-y-2 pointer-events-none"
+          }
+        `}
+      >
+        <div className="px-8 max-h-[70vh] overflow-y-auto no-scrollbar">
+          <div className={`grid ${gridColumnsClass} gap-x-10 gap-y-6`}>
+            {menuData.map((block, i) => {
+              const IconComponent = getIconComponent(block.icon);
+              return (
+                <div key={i} className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#1C1C1C] text-white">
+                      <IconComponent className="w-5 h-5" />
+                    </div>
+                    <span className="text-[15px] font-semibold text-white">{block.title}</span>
+                  </div>
+
+                  {block.items && (
+                    <div className="space-y-1.5">
+                      {block.items.map((link, j) => (
+                        <Link
+                          key={j}
+                          href={link.path}
+                          className="block text-[14px] leading-[1.4] transition-colors text-[#C7C7C7] hover:text-white"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+
+                  {block.sections && (
+                    <div className="space-y-3">
+                      {block.sections.map((section) => (
+                        <CollapsibleSection key={section.key} section={section} />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------------- MAIN NAVIGATION COMPONENT --------------- */
+
+export default function Navigation() {
+  const pathname = usePathname();
+
+  const isPlatformsActive = pathname.startsWith("/platforms");
+  const isStartActive = pathname.startsWith("/start-business") || pathname.startsWith("/start");
+  const isManageBusinessActive = pathname.startsWith("/manage-business");
+  const isServicesActive = pathname.startsWith("/services");
+  const isIndustryActive = pathname.startsWith("/industry");
+  const isAboutActive = pathname.startsWith("/about");
+
+  return (
+    <nav className="hidden lg:flex items-center gap-[40px]">
+      {topLevelItems.map((item: NavItem, index: number) => {
+        const path = item.path;
+        const isPlatforms = path === "/platforms";
+        const isStart = path === "/start-business";
+        const isManageBusiness = path === "/manage-business";
+        const isServices = path === "/services";
+        const isIndustry = path === "/industry";
+        const isAbout = path === "/about";
+        const isExpand = path === "/expand-business";
+
+        if (isExpand) {
+          return (
+            <Link
+              key={index}
+              href={item.path}
+              className="cursor-pointer text-[15px] tracking-[0.04em] uppercase transition-colors duration-200 text-[#8D8D8D] font-normal hover:text-white"
+            >
+              {item.name}
+            </Link>
+          );
+        }
+
+        if (isAbout) {
+          return (
+            <MegaMenuRenderer
+              key={index}
+              menuData={whoWeAre}
+              isActive={isAboutActive}
+              menuKey="whoWeAre"
+              width="500px"
+              columns={3}
+              position="right"
+              offsetX={-20}
+              alignTo="screen"
+            />
+          );
+        }
+
+        if (isServices) {
+          return (
+            <MegaMenuRenderer
+              key={index}
+              menuData={services}
+              isActive={isServicesActive}
+              menuKey="services"
+              width="1200px"
+              columns={3}
+              position="center"
+              alignTo="screen"
+            />
+          );
+        }
+
+        if (isIndustry) {
+          return (
+            <MegaMenuRenderer
+              key={index}
+              menuData={industry}
+              isActive={isIndustryActive}
+              menuKey="industry"
+              width="960px"
+              columns={4}
+              position="center"
+              offsetX={-100}
+              alignTo="screen"
+            />
+          );
+        }
+
+        if (isManageBusiness) {
+          return (
+            <MegaMenuRenderer
+              key={index}
+              menuData={manageBusiness}
+              isActive={isManageBusinessActive}
+              menuKey="manageBusiness"
+              width="1200px"
+              columns={3}
+              position="left"
+              offsetX={10}
+              alignTo="screen"
+            />
+          );
+        }
+
+        if (isPlatforms) {
+          return (
+            <MegaMenuRenderer
+              key={index}
+              menuData={platforms}
+              isActive={isPlatformsActive}
+              menuKey="platforms"
+              width="960px"
+              columns={4}
+              position="right"
+              offsetX={-10}
+              alignTo="screen"
+            />
+          );
+        }
+
+        if (isStart) {
+          return (
+            <MegaMenuRenderer
+              key={index}
+              menuData={start}
+              isActive={isStartActive}
+              menuKey="start"
+              width="1200px"
+              columns={4}
+              position="left"
+              offsetX={20}
+              alignTo="screen"
+            />
+          );
+        }
+
+        return null;
+      })}
+    </nav>
+  );
+}
