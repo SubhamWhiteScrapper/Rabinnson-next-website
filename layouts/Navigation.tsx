@@ -265,13 +265,16 @@ function MegaMenuRenderer({
 
 export default function Navigation() {
   const pathname = usePathname();
-
-  const isPlatformsActive = pathname.startsWith("/platforms");
-  const isStartActive = pathname.startsWith("/start-business") || pathname.startsWith("/start");
-  const isManageBusinessActive = pathname.startsWith("/manage-business");
-  const isServicesActive = pathname.startsWith("/services");
-  const isIndustryActive = pathname.startsWith("/industry");
-  const isAboutActive = pathname.startsWith("/about");
+  
+  // Handle null pathname with optional chaining and default empty string
+  const currentPath = pathname || "";
+  
+  const isPlatformsActive = currentPath.startsWith("/platforms");
+  const isStartActive = currentPath.startsWith("/start-business") || currentPath.startsWith("/start");
+  const isManageBusinessActive = currentPath.startsWith("/manage-business");
+  const isServicesActive = currentPath.startsWith("/services");
+  const isIndustryActive = currentPath.startsWith("/industry");
+  const isAboutActive = currentPath.startsWith("/about");
 
   return (
     <nav className="hidden lg:flex items-center gap-[40px]">
