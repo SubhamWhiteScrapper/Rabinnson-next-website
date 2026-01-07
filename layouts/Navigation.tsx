@@ -64,9 +64,8 @@ function CollapsibleSection({ section }: { section: MenuSection }) {
       >
         <span>{section.heading}</span>
         <ChevronDown
-          className={`w-3 h-3 ml-2 transition-transform duration-150 ${
-            open ? "rotate-180" : "rotate-0"
-          }`}
+          className={`w-3 h-3 ml-2 transition-transform duration-150 ${open ? "rotate-180" : "rotate-0"
+            }`}
         />
       </button>
 
@@ -111,29 +110,28 @@ function MegaMenuRenderer({
   alignTo = "parent"
 }: MegaMenuProps) {
   const pathname = usePathname();
-  
-  const navLinkPath = menuKey === "start" ? "/start-business" : 
-                     menuKey === "whoWeAre" ? "/about" : 
-                     menuKey === "manageBusiness" ? "/manage-business" :
-                     menuKey === "services" ? "/services" :
-                     menuKey === "industry" ? "/industry" :
-                     menuKey === "platforms" ? "/platforms" : `/${menuKey}`;
 
-  const gridColumnsClass = columns === 3 ? "grid-cols-3" : 
-                          columns === 4 ? "grid-cols-4" : 
-                          "grid-cols-3";
+  const navLinkPath = menuKey === "start" ? "/start-business" :
+    menuKey === "whoWeAre" ? "/about" :
+      menuKey === "manageBusiness" ? "/manage-business" :
+        menuKey === "services" ? "/services" :
+          menuKey === "industry" ? "/industry" :
+            menuKey === "platforms" ? "/platforms" : `/${menuKey}`;
 
-  const displayName = menuKey === "start" ? "Start" : 
-                     menuKey === "whoWeAre" ? "Who we are" :
-                     menuKey === "manageBusiness" ? "Manage" :
-                     menuKey === "services" ? "Grow" :
-                     menuKey === "industry" ? "Industry" :
-                     menuKey === "platforms" ? "Platform" : menuKey;
+  const gridColumnsClass = columns === 3 ? "grid-cols-3" :
+    columns === 4 ? "grid-cols-4" :
+      "grid-cols-3";
+
+  const displayName = menuKey === "start" ? "Start" :
+    menuKey === "whoWeAre" ? "Who we are" :
+      menuKey === "manageBusiness" ? "Manage" :
+        menuKey === "services" ? "Grow" :
+          menuKey === "industry" ? "Industry" :
+            menuKey === "platforms" ? "Platform" : menuKey;
 
   const parentRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const [menuStyle, setMenuStyle] = useState<React.CSSProperties>({});
-  const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
     const updatePosition = () => {
@@ -141,7 +139,7 @@ function MegaMenuRenderer({
 
       const parentRect = parentRef.current.getBoundingClientRect();
       const menuWidth = parseInt(width.replace('px', ''));
-      
+
       let leftPosition = 0;
 
       switch (position) {
@@ -180,7 +178,7 @@ function MegaMenuRenderer({
 
     updatePosition();
     window.addEventListener('resize', updatePosition);
-    
+
     return () => window.removeEventListener('resize', updatePosition);
   }, [width, position, offsetX, alignTo]);
 
@@ -188,14 +186,11 @@ function MegaMenuRenderer({
     <div
       ref={parentRef}
       className="relative inline-flex items-center group"
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
     >
       <Link
         href={navLinkPath}
-        className={`cursor-pointer text-[15px] tracking-[0.04em] uppercase transition-colors duration-200 flex items-center gap-1 ${
-          isActive ? "text-white font-semibold" : "text-[#8D8D8D] font-normal"
-        } hover:text-white`}
+        className={`cursor-pointer text-[15px] tracking-[0.04em] uppercase transition-colors duration-200 flex items-center gap-1 ${isActive ? "text-white font-semibold" : "text-[#8D8D8D] font-normal"
+          } hover:text-white`}
       >
         <span>{displayName}</span>
         <ChevronDown className="w-3 h-3 ml-1 transition-transform duration-150 group-hover:rotate-180" />
@@ -209,12 +204,10 @@ function MegaMenuRenderer({
           rounded-3xl bg-[#111111]/95 border border-[#262626]
           shadow-[0_32px_60px_rgba(0,0,0,0.80)]
           py-6 px-0
-          transition-all duration-150 ease-out
-          backdrop-blur-md z-50
-          ${isHovering 
-            ? "opacity-100 translate-y-0 pointer-events-auto" 
-            : "opacity-0 translate-y-2 pointer-events-none"
-          }
+          transition-all duration-200 ease-out z-50
+          backdrop-blur-md
+          invisible opacity-0 translate-y-2 delay-300
+          group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-hover:delay-0
         `}
       >
         <div className="px-8 max-h-[70vh] overflow-y-auto no-scrollbar">
@@ -265,10 +258,10 @@ function MegaMenuRenderer({
 
 export default function Navigation() {
   const pathname = usePathname();
-  
+
   // Handle null pathname with optional chaining and default empty string
   const currentPath = pathname || "";
-  
+
   const isPlatformsActive = currentPath.startsWith("/platforms");
   const isStartActive = currentPath.startsWith("/start-business") || currentPath.startsWith("/start");
   const isManageBusinessActive = currentPath.startsWith("/manage-business");
