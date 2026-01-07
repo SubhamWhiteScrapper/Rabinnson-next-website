@@ -282,7 +282,6 @@
       "items": [
         { "label": "Sole Proprietorship", "path": "/start/incorporate/sole-proprietorship" },
         { "label": "Partnership Registration", "path": "/start/incorporate/partnership-registration" },
-        { "label": "Private Limited Company Registration", "path": "/start/incorporate/private-limited-company-registration" },
         { "label": "LLP Registration", "path": "/start/incorporate/llp-registration" },
         { "label": "One Person Company Registration", "path": "/start/incorporate/one-person-company-registration" },
         { "label": "Section 8 Company (NGO)", "path": "/start/incorporate/section-8-company-ngo" },
@@ -301,8 +300,8 @@
           "heading": "Licenses",
           "key": "licenses",
           "items": [
-            { "label": "IECI (Import & Export) Registration", "path": "/start/license/iec-import-export-registration" },
-            { "label": "FSSAI License & Registration", "path": "/start/license/fssai-license-registration" },
+            { "label": "IECI (Import & Export) Registration", "path": "/start/license/iecregistration" },
+            { "label": "FSSAI License & Registration", "path": "/start/license/fssailicense" },
             { "label": "Trade Licenses", "path": "/start/license/trade-licenses" },
             { "label": "Factory Licenses", "path": "/start/license/factory-licenses" }
           ]
@@ -312,9 +311,9 @@
           "key": "certifications",
           "items": [
             { "label": "Start-up India Registration", "path": "/start/license/startup-india-registration" },
-            { "label": "MSME Udyam Registration", "path": "/start/license/msme-udyam-registration" },
-            { "label": "ISO Certification", "path": "/start/license/iso-certification" },
-            { "label": "Make in India (MII) Certificate for GeM", "path": "/start/license/make-in-india-mii-gem" }
+            { "label": "MSME Udyam Registration", "path": "/start/license/msmeregistration" },
+            { "label": "ISO Certification", "path": "/start/license/isocertification" },
+            { "label": "Make in India (MII) Certificate for GeM", "path": "/start/license/make-in-india" }
           ]
         }
       ]
@@ -323,14 +322,14 @@
       "icon": "FaBalanceScale",
       "title": "Tax & Statutory",
       "items": [
-        { "label": "GST Registration", "path": "/start/tax/gst-registration" },
-        { "label": "PAN/TAN Application", "path": "/start/tax/pan-tan-application" },
-        { "label": "12A and 80G Registration", "path": "/start/tax/12a-80g-registration" },
-        { "label": "RCMC Registration", "path": "/start/tax/rcmc-registration" },
-        { "label": "Shop & Establishment Registration", "path": "/start/tax/shop-establishment-registration" },
+        { "label": "GST Registration", "path": "/start/tax/gstregistration" },
+        { "label": "PAN/TAN Application", "path": "/start/tax/pantanapplication" },
+        { "label": "12A and 80G Registration", "path": "/start/tax/registration12a80g" },
+        { "label": "RCMC Registration", "path": "/start/tax/rcmcregistration" },
+        { "label": "Shop & Establishment Registration", "path": "/start/tax/shop-establishment" },
         { "label": "Professional Tax", "path": "/start/tax/professional-tax" },
-        { "label": "PF Registration", "path": "/start/tax/pf-registration" },
-        { "label": "ESIC Registration", "path": "/start/tax/esic-registration" }
+        { "label": "PF Registration", "path": "/start/tax/pfregistration" },
+        { "label": "ESIC Registration", "path": "/start/tax/esicregistration" }
       ]
     },
     {
@@ -364,21 +363,21 @@
           "items": [
             { "label": "Code of Conduct", "path": "/start/legal/agreements/code-of-conduct" },
             { "label": "Company Policy", "path": "/start/legal/agreements/company-policy" },
-            { "label": "Employment Entry/Exit Agreement", "path": "/start/legal/agreements/employment-entry-exit-agreement" },
+            { "label": "Employment Entry/Exit Agreement", "path": "/start/legal/agreements/employment-agreement" },
             { "label": "Memorandum of Understanding", "path": "/start/legal/agreements/mou" },
             { "label": "Letter of Intent", "path": "/start/legal/agreements/letter-of-intent" },
             { "label": "Customer or Vendor Agreement", "path": "/start/legal/agreements/customer-vendor-agreement" },
-            { "label": "Terms of Use Agreement", "path": "/start/legal/agreements/terms-of-use-agreement" },
+            { "label": "Terms of Use Agreement", "path": "/start/legal/agreements/terms-of-use" },
             { "label": "Founders Agreement", "path": "/start/legal/agreements/founders-agreement" },
             { "label": "Non Disclosure Agreement", "path": "/start/legal/agreements/nda" },
             { "label": "Transfer Pricing Agreement", "path": "/start/legal/agreements/transfer-pricing-agreement" },
-            { "label": "Privacy Policy Agreement", "path": "/start/legal/agreements/privacy-policy-agreement" },
-            { "label": "Fair Use Policy Agreement", "path": "/start/legal/agreements/fair-use-policy-agreement" },
+            { "label": "Privacy Policy Agreement", "path": "/start/legal/agreements/privacy-policy" },
+            { "label": "Fair Use Policy Agreement", "path": "/start/legal/agreements/fair-use-policy" },
             { "label": "End User License Agreement (EULA)", "path": "/start/legal/agreements/eula" },
             { "label": "Developer-Owner Agreement", "path": "/start/legal/agreements/developer-owner-agreement" },
             { "label": "Service Level Agreement", "path": "/start/legal/agreements/service-level-agreement" },
             { "label": "Master Service Agreement", "path": "/start/legal/agreements/master-service-agreement" },
-            { "label": "Product Sale or Acquire Agreement", "path": "/start/legal/agreements/product-sale-or-acquire-agreement" }
+            { "label": "Product Sale or Acquire Agreement", "path": "/start/legal/agreements/product-sale-agreement" }
           ]
         }
       ]
@@ -395,25 +394,25 @@
             { "label": "Startup Grants/Loans", "path": "/start/fund/fundraising-documentation/startup-grants-loans" },
             { "label": "Valuation Certificate", "path": "/start/fund/fundraising-documentation/valuation-certificate" },
             { "label": "Financial Projections Services", "path": "/start/fund/fundraising-documentation/financial-projections-services" },
-            { "label": "Pitch Deck for Investors", "path": "/start/fund/fundraising-documentation/pitch-deck-for-investors" },
-            { "label": "Detailed Project Report (DPR) Services", "path": "/start/fund/fundraising-documentation/dpr-services" }
+            { "label": "Pitch Deck for Investors", "path": "/start/fund/fundraising-documentation/pitch-deck" },
+            { "label": "Detailed Project Report (DPR) Services", "path": "/start/fund/fundraising-documentation/dprservices" }
           ]
         },
         {
           "heading": "Fundraising Compliance",
           "key": "fund-compliance",
           "items": [
-            { "label": "Secretarial Compliance (Fundraising)", "path": "/start/fund/fundraising-compliance/secretarial-compliance-fundraising" },
-            { "label": "Fundraising Secretarial Compliance", "path": "/start/fund/fundraising-compliance/fundraising-secretarial-compliance" },
-            { "label": "Term Sheet and SHA", "path": "/start/fund/fundraising-compliance/term-sheet-and-sha" },
-            { "label": "Due Diligence", "path": "/start/fund/fundraising-compliance/due-diligence" }
+            { "label": "Secretarial Compliance (Fundraising)", "path": "/start/fund/compliance/secretarial-compliance-fundraising" },
+            { "label": "Fundraising Secretarial Compliance", "path": "/start/fund/compliance/fundraising-secretarial-compliance" },
+            { "label": "Term Sheet and SHA", "path": "/start/fund/compliance/term-sheet-and-sha" },
+            { "label": "Due Diligence", "path": "/start/fund/compliance/due-diligence" }
           ]
         },
         {
           "heading": "Fundraising Advisory",
           "key": "fund-advisory",
           "items": [
-            { "label": "Government Grant Advisory Services", "path": "/start/fund/fundraising-advisory/government-grant-advisory-services" }
+            { "label": "Government Grant Advisory Services", "path": "/start/fund/advisory/government-grant-advisory-services" }
           ]
         }
       ]
