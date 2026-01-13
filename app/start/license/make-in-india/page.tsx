@@ -23,9 +23,9 @@ import Avatar4 from "@/assets/images/avatar-4.png";
 
 export default function MakeInIndia() {
   const heroContent = {
-    title: "Make in India (MII) Certificate",
+    title: "Make in India (MII) Certificate for GeM",
     description:
-      "Get Make in India certification for Government e-Marketplace (GeM) participation. Priority in government procurement and access to exclusive benefits.",
+      "CapEasy enables Indian manufacturers to access government procurement platforms by obtaining the Make in India (MII) Certificate, a critical document for vendor registration and product listing on the Government e-Marketplace (GeM). This certification helps businesses establish domestic manufacturing credentials and gain purchase preference in public tenders.",
     ctaText: "Apply Now",
     ctaLink: "/contact",
     subText: "Get a Free Consultation & Compliance Checklist",
@@ -34,16 +34,16 @@ export default function MakeInIndia() {
   const introContent = {
     badge: "Make in India",
     badgeIcon: Flag,
-    title: "Boost Your Government Business",
-    subtitle: "MII Certificate for GeM Portal",
+    title: "CapEasy's MII Certification Services",
+    subtitle: "End-to-End Support for GeM Vendor Registration",
     description:
-      "Make in India certificate provides domestic manufacturers with priority access to government procurement opportunities. It validates the local content in your products and gives you a competitive edge in government tenders.",
+      "We simplify eligibility assessment, documentation, and submission under the DPIIT-approved MII framework. Our Make in India Certification Services Include:",
     features: [
-      "Priority in Government Procurement",
-      "Price Preference in Tenders",
-      "Access to GeM Platform",
-      "Support for Local Manufacturing",
-      "Class I & II Supplier Status",
+      "Eligibility check under DPIIT's Public Procurement (Preference to Make in India) order",
+      "Assistance in calculating and validating domestic value addition percentage",
+      "Certificate issuance from recognized authority (e.g., QCI, MSME Tech Centers)",
+      "GeM portal linkage and vendor onboarding support",
+      "Advisory on tender participation and benefit utilization",
     ],
     image1:
       "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +54,14 @@ export default function MakeInIndia() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Eligibility Assessment",
-      title: "Check Your Local Content",
+      badge: "What is the MII Certificate?",
+      title: "Government-Backed Certification for Local Manufacturing",
       description:
-        "We assess your product's local content percentage to determine eligibility for Make in India certification and the appropriate class.",
+        "The Make in India (MII) Certificate for GeM is a government-backed certification designed to promote domestic manufacturing in India by giving priority to locally manufactured goods and services in government procurement. Launched in 2014, the Make in India initiative aims to position India as a global manufacturing hub by attracting investments and supporting local industries. In 2016, the Government e-Marketplace (GeM) was introduced as a centralized procurement platform for government departments and PSUs. The MII Certificate for GeM is issued to OEMs and service providers that meet the eligibility criteria for domestic production. This certification allows businesses to label their products as 'Made in India', giving them a competitive advantage in government tenders.",
       features: [
-        "Product Analysis",
-        "Local Content Calculation",
-        "Class Determination",
-        "Document Preparation",
+        "Issued to OEMs and service providers meeting domestic production criteria",
+        "Enables 'Made in India' product labeling",
+        "Competitive advantage in government tenders",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +71,15 @@ export default function MakeInIndia() {
     },
     {
       id: 2,
-      badge: "Certification Process",
-      title: "Complete MII Certification",
+      badge: "Why Do MSMEs Need MII Certification?",
+      title: "Mandatory for Government Procurement & OEMs",
       description:
-        "We handle the entire certification process including self-certification declaration, document submission, and verification procedures.",
+        "As per Government Order P-45021/2/2017-PP (BE-II), only Class-I and Class-II local suppliers can participate in government procurement for purchases valued at less than ₹200 crores. Mandatory for OEMs – All OEMs must submit an MII certification while bidding for tenders on platforms like GeM and NICSI. Boosts Domestic Manufacturing – Ensures that local manufacturers and service providers get priority over foreign suppliers. Government Procurement Preference – Businesses with an MII certificate receive priority in public procurement contracts, helping MSMEs grow.",
       features: [
-        "Self-Declaration Filing",
-        "Document Verification",
-        "Certificate Issuance",
-        "GeM Portal Update",
+        "Mandatory for OEMs on GeM/NICSI",
+        "Priority in public procurement",
+        "Boosts domestic manufacturing",
+        "Preference for MSMEs in tenders",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1080",
@@ -92,21 +91,96 @@ export default function MakeInIndia() {
     },
     {
       id: 3,
-      badge: "GeM Registration",
-      title: "Start Selling on GeM",
+      badge: "Supplier Classification",
+      title: "Class-I, Class-II & Non-Local Suppliers",
       description:
-        "Once certified, we help you register on GeM portal and list your products for government procurement opportunities.",
+        "The Department for Promotion of Industry and Internal Trade (DPIIT) classifies local suppliers into three categories based on the percentage of Indian content in their products. Class-I: 50% or more Indian content (highest priority). Class-II: 20%-50% Indian content (next preference). Non-Local: Less than 20% Indian content (not eligible for preference).",
       features: [
-        "GeM Seller Registration",
-        "Product Catalog Creation",
-        "Bid Participation Support",
-        "Order Fulfillment Guidance",
+        "Class-I: ≥50% Indian content",
+        "Class-II: 20%-50% Indian content",
+        "Non-Local: <20% Indian content",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1080",
       imagePosition: "right",
       hasOverlappingImages: false,
       icon: Building2,
+    },
+    {
+      id: 4,
+      badge: "Documents Required",
+      title: "Checklist for MII Certificate Application",
+      description:
+        "Purchase Bills – Bills for machinery, tools, and critical equipment used in the manufacturing process. Company Letterhead – Official company letterhead for documentation and communication purposes. Component Details – List of materials and components used in the product. Manufacturing Capacity Report – Details of monthly production capacity. GSTIN Certificate – Proof of business registration and GST compliance. GeM OEM Certificate – Required if the applicant is an OEM. Supplier Purchase Bills – Bills for materials and components sourced from suppliers. Manufacturing Floor Diagram – Layout of manufacturing facility and equipment.",
+      features: [
+        "Purchase Bills",
+        "Company Letterhead",
+        "Component Details",
+        "Manufacturing Capacity Report",
+        "GSTIN Certificate",
+        "GeM OEM Certificate (if OEM)",
+        "Supplier Purchase Bills",
+        "Manufacturing Floor Diagram",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "left",
+      hasOverlappingImages: false,
+      icon: FileText,
+    },
+    {
+      id: 5,
+      badge: "Certification Procedure",
+      title: "Step-by-Step MII Certification Process",
+      description:
+        "The certification process involves technical evaluation and verification by authorized professionals. Step 1: Product Documentation & Evaluation – Provide product details, specifications, and technical documentation. Submit a breakdown of raw materials used in manufacturing. Step 2: Local Content Verification – Calculate the percentage of Indian and overseas components. Certification is verified and approved by a Chartered Accountant (CA). Step 3: Certification Issuance – Once verified, the Make in India Certificate is issued, allowing businesses to participate in government tenders on GeM.",
+      features: [
+        "Step 1: Product Documentation & Evaluation",
+        "Step 2: Local Content Verification",
+        "Step 3: Certification Issuance",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: ShieldCheck,
+    },
+    {
+      id: 6,
+      badge: "Benefits of MII Certification",
+      title: "Why Get Certified for GeM?",
+      description:
+        "Priority in Government Procurement – GeM gives preference to MII-certified businesses in public-sector tenders. Access to More Business Opportunities – MSMEs can bid on high-value government contracts without restrictions. Enhanced Market Credibility – Improves brand reputation as a recognized Indian manufacturer. Eligibility for Subsidies & Incentives – Certified businesses may receive financial support, tax benefits, and industrial subsidies. Exemption from Earnest Money Deposit (EMD) – Reduces financial burden in tender applications.",
+      features: [
+        "Priority in Government Procurement",
+        "Access to more business opportunities",
+        "Enhanced market credibility",
+        "Eligibility for subsidies & incentives",
+        "Exemption from Earnest Money Deposit (EMD)",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "left",
+      hasOverlappingImages: false,
+      icon: Building2,
+    },
+    {
+      id: 7,
+      badge: "Why Choose CapEasy?",
+      title: "CapEasy Makes MII Certification Simple",
+      description:
+        "At CapEasy, we simplify the Make in India (MII) Certification process, ensuring a smooth and efficient experience. Expert Guidance – We assess your eligibility and help with documentation. Simplified Process – Our team manages the verification and certification steps for you. Fast Processing – Get your MII Certificate without unnecessary delays. Regulatory Compliance – We ensure your certification meets all government requirements.",
+      features: [
+        "Expert Guidance",
+        "Simplified Process",
+        "Fast Processing",
+        "Regulatory Compliance",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: ShieldCheck,
     },
   ];
 
@@ -142,14 +216,14 @@ export default function MakeInIndia() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +254,7 @@ export default function MakeInIndia() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +264,7 @@ export default function MakeInIndia() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +291,7 @@ export default function MakeInIndia() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +302,20 @@ export default function MakeInIndia() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +366,7 @@ export default function MakeInIndia() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +382,7 @@ export default function MakeInIndia() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +405,7 @@ export default function MakeInIndia() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

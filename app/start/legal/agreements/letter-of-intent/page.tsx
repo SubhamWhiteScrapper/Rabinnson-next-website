@@ -40,7 +40,7 @@ const LetterOfIntent = () => {
     description:
       "Express your serious intent to enter into a business transaction with a professionally drafted Letter of Intent.",
     ctaText: "Draft LOI",
-    ctaLink: "/contact",
+    ctaLink: "/start-generating-your-idea",
     subText: "Formalize Your Business Intent",
   };
 
@@ -180,8 +180,7 @@ const LetterOfIntent = () => {
         ref={ref}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full"
       >
-        {/* this is the extra commetns */}
-        <h1 className=" text-7xl text-red-600 font-bold">  Red  Warning Not completed conntent not available </h1>
+        
         <div className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center">
           <div
             className={`flex flex-col justify-center space-y-4 sm:space-y-6 transition-all duration-700 ease-out ${

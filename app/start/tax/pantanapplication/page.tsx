@@ -5,7 +5,7 @@ import Link from 'next/link';
 import {
   Check,
   ArrowRight,
-  CreditCard,
+  Receipt,
   FileText,
   ShieldCheck,
   Building2,
@@ -21,32 +21,32 @@ import Avatar2 from "@/assets/images/avatar-2.png";
 import Avatar3 from "@/assets/images/avatar-3.png";
 import Avatar4 from "@/assets/images/avatar-4.png";
 
-export default function PANTANApplication() {
+export default function PantanApplication() {
   const heroContent = {
-    title: "PAN/TAN Application",
+    title: "PAN & TAN Registration",
     description:
-      "Get your PAN and TAN for income tax compliance. Essential tax identifiers for business operations and TDS deductions.",
+      "We provide fast and reliable assistance for obtaining PAN (Permanent Account Number) and TAN (Tax Deduction and Collection Account Number)—two essential identifiers for financial and tax compliance in India. While PAN is mandatory for income tax filings and high-value transactions, TAN is crucial for businesses deducting Tax at Source (TDS).",
     ctaText: "Apply Now",
     ctaLink: "/contact",
-    subText: "Get a Free Consultation & Compliance Checklist",
+    subText: "Free Consultation & Document Checklist",
   };
 
   const introContent = {
-    badge: "PAN/TAN Application",
-    badgeIcon: CreditCard,
-    title: "Essential Tax Identifiers",
-    subtitle: "Permanent Account Number & Tax Deduction Account Number",
+    badge: "Our Services",
+    badgeIcon: Receipt,
+    title: "PAN & TAN Registration Services",
+    subtitle: "Streamlined Application & Compliance",
     description:
-      "PAN (Permanent Account Number) and TAN (Tax Deduction Account Number) are essential tax identifiers. PAN is required for income tax filing while TAN is needed for TDS deduction and deposit.",
+      "We streamline the documentation, application, and issuance process so that your business remains fully compliant with the Income Tax Act.",
     features: [
-      "PAN for Income Tax Filing",
-      "TAN for TDS Deduction",
-      "Mandatory for Business",
-      "Banking & Financial Operations",
-      "Quick Processing",
+      "Filing PAN application for companies, LLPs, proprietorships, and individuals",
+      "TAN registration for TDS compliance on salary, contractor, and vendor payments",
+      "Correction, re-issuance, or duplicate PAN/TAN applications",
+      "Linking PAN with Aadhaar and GST for regulatory compliance",
+      "Advisory on when TAN is required and ongoing TDS filing obligations",
     ],
     image1:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1080",
+      "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1080",
     image2:
       "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1080",
   };
@@ -54,63 +54,63 @@ export default function PANTANApplication() {
   const scrollSections = [
     {
       id: 1,
-      badge: "PAN Application",
-      title: "Get Your PAN Card",
+      badge: "Understanding Differences",
+      title: "PAN & TAN: The Difference",
       description:
-        "We assist with PAN application for individuals and businesses. From form filling to document submission and tracking.",
+        "When running a business or earning taxable income, it's essential to know the difference. PAN acts as a financial identity for transparency, while TAN is for enabling Tax Deduction at Source (TDS).",
       features: [
-        "Form 49A/49AA Preparation",
-        "Document Verification",
-        "Application Submission",
-        "PAN Card Delivery",
+        "PAN: Unique 10-digit ID for filing income tax returns",
+        "TAN: 10-digit number for deducting Tax at Source (TDS)",
+        "PAN: Mandatory for high-value transactions & bank accounts",
+        "TAN: Mandatory for businesses enabling TDS credits",
       ],
       imageUrl1:
-        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
+        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1080",
       imagePosition: "right",
       hasOverlappingImages: false,
       icon: FileText,
     },
     {
       id: 2,
-      badge: "TAN Application",
-      title: "TAN Registration for TDS",
+      badge: "Key Benefits",
+      title: "Benefits of PAN & TAN",
       description:
-        "TAN is mandatory for deducting TDS. We help you apply for TAN and set up TDS compliance for your business.",
+        "Holding valid tax identities ensures you stay compliant, prevents higher tax deductions, and enables smooth financial operations.",
       features: [
-        "Form 49B Preparation",
-        "TAN Application Filing",
-        "TDS Registration",
-        "Compliance Setup",
+        "PAN is a legally accepted photo identification proof",
+        "Mandatory for bank accounts & claiming tax credits",
+        "TAN ensures proper TDS compliance & accurate deposits",
+        "Avoids higher TDS deduction penalties",
       ],
       imageUrl1:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1080",
+        "https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80&w=1080",
       imageUrl2:
-        "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=1080",
+        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1080",
       imagePosition: "left",
       hasOverlappingImages: true,
       icon: ShieldCheck,
     },
     {
       id: 3,
-      badge: "Corrections & Updates",
-      title: "PAN/TAN Corrections",
+      badge: "Requirements",
+      title: "Requirements for Application",
       description:
-        "Need to update details on your PAN or TAN? We handle corrections for name, address, date of birth, and other details.",
+        "A business is required to present valid documents to verify identity and address for successful application processing.",
       features: [
-        "Name Correction",
-        "Address Update",
-        "Photo & Signature Update",
-        "Duplicate Card Request",
+        "Business documents (Certificate of Incorporation, Deed, MOA)",
+        "Partner/Proprietor name and role details",
+        "Address proof (Aadhaar Card, Passport, etc.)",
+        "Contact details (Mobile Number and Email ID)",
       ],
       imageUrl1:
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1080",
+        "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=1080",
       imagePosition: "right",
       hasOverlappingImages: false,
       icon: Building2,
     },
   ];
 
-  const [ ,setActiveSection] = useState(0);
+  const [, setActiveSection] = useState(0);
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
@@ -142,14 +142,14 @@ export default function PANTANApplication() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8" />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2" />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2" />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2" />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +180,7 @@ export default function PANTANApplication() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +190,7 @@ export default function PANTANApplication() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +217,7 @@ export default function PANTANApplication() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +228,20 @@ export default function PANTANApplication() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -254,7 +254,8 @@ export default function PANTANApplication() {
             How We Help You
           </h1>
           <p className="text-slate-600 max-w-xl mx-auto text-sm lg:text-base">
-            From application to corrections, we are with you at every step.
+            From registration to compliance and advisory, we are with you at
+            every step.
           </p>
         </div>
         <div className="relative">
@@ -272,9 +273,8 @@ export default function PANTANApplication() {
                 <div className="max-w-9xl mx-auto px-6 lg:px-12 w-full h-full">
                   <div className="grid md:grid-cols-2 gap-10 lg:gap-16 h-full items-center">
                     <div
-                      className={`flex flex-col justify-center space-y-6 ${
-                        isEven ? "md:order-2" : ""
-                      }`}
+                      className={`flex flex-col justify-center space-y-6 ${isEven ? "md:order-2" : ""
+                        }`}
                     >
                       <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full w-fit">
                         <Icon className="w-4 h-4 text-slate-700" />
@@ -291,7 +291,7 @@ export default function PANTANApplication() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -307,7 +307,7 @@ export default function PANTANApplication() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -330,7 +330,7 @@ export default function PANTANApplication() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

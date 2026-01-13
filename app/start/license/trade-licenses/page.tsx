@@ -23,9 +23,9 @@ import Avatar4 from "@/assets/images/avatar-4.png";
 
 export default function TradeLicenses() {
   const heroContent = {
-    title: "Trade License Registration",
+    title: "Trade License Registration with CapEasy",
     description:
-      "Get your trade license from local municipal authorities. Legal authorization to conduct business within your city or municipality.",
+      "CapEasy helps businesses operate legally and locally with ease through Trade License Registration. Issued by municipal corporations, a trade license is mandatory for commercial establishments such as shops, restaurants, clinics, warehouses, and service providers. Our team simplifies the application process and ensures your business complies with local civic regulations, allowing you to focus on growth without facing legal roadblocks.",
     ctaText: "Apply Now",
     ctaLink: "/contact",
     subText: "Get a Free Consultation & Compliance Checklist",
@@ -34,16 +34,16 @@ export default function TradeLicenses() {
   const introContent = {
     badge: "Trade License",
     badgeIcon: Store,
-    title: "Legal Authorization for Your Business",
-    subtitle: "Municipal Trade License",
+    title: "CapEasy's Trade License Services",
+    subtitle: "End-to-End Municipal Registration Support",
     description:
-      "Trade license is a mandatory permission issued by local municipal corporations or panchayats to carry out any trade, business, or profession within their jurisdiction. It ensures compliance with local regulations and health standards.",
+      "Our Trade License Services Include:",
     features: [
-      "Legal Authorization to Operate",
-      "Municipal Compliance",
-      "Annual Renewal Support",
-      "Multi-Trade Categories",
-      "Location-Based License",
+      "Consultation to determine the applicable category based on business activity",
+      "Documentation support and application filing with local municipal body",
+      "Coordination for inspections, if required",
+      "Timely renewal tracking and compliance updates",
+      "Advisory on shop & establishment registrations where applicable",
     ],
     image1:
       "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +54,14 @@ export default function TradeLicenses() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Application Process",
-      title: "Quick Trade License Application",
+      badge: "Overview of Trade License",
+      title: "What is a Trade License?",
       description:
-        "We handle the complete trade license application with your local municipal body. From documentation to submission and follow-up.",
+        "A Trade License is an official certificate issued by the Municipal Corporation, permitting businesses to operate in a designated area while ensuring compliance with safety and regulatory norms. This license is mandatory for all businesses operating within the jurisdiction of a State Municipal Corporation Act and aims to regulate business activities to safeguard public health and maintain law and order.",
       features: [
-        "Business Category Assessment",
-        "Document Preparation",
-        "Municipal Application",
-        "License Tracking",
+        "Official certificate issued by Municipal Corporation",
+        "Mandatory for businesses within municipal limits",
+        "Ensures compliance with safety and regulatory norms",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +71,17 @@ export default function TradeLicenses() {
     },
     {
       id: 2,
-      badge: "Compliance",
-      title: "Stay Compliant with Local Laws",
+      badge: "Who Needs a Trade License?",
+      title: "Business Categories Requiring Trade License",
       description:
-        "Trade license compliance includes maintaining premises standards, displaying license, and adhering to permitted business activities.",
+        "Any business entity operating within municipal limits must obtain a Trade License before starting operations. Categories include: Shops & Retail Stores, Restaurants & Food Businesses, Manufacturing & Industrial Units, Commercial Establishments, Warehousing & Logistics, Healthcare Businesses.",
       features: [
-        "Premises Standards",
-        "Health & Safety Norms",
-        "Permitted Activities",
-        "Display Requirements",
+        "Shops & Retail Stores",
+        "Restaurants & Food Businesses",
+        "Manufacturing & Industrial Units",
+        "Commercial Establishments",
+        "Warehousing & Logistics",
+        "Healthcare Businesses",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=1080",
@@ -92,21 +93,119 @@ export default function TradeLicenses() {
     },
     {
       id: 3,
-      badge: "Renewal & Amendment",
-      title: "Timely Renewal & Modifications",
+      badge: "Types of Trade Licenses",
+      title: "Industrial, Commercial & Food/Health Licenses",
       description:
-        "Trade licenses need annual renewal. We ensure timely renewal and help with amendments for change of address, business activity, or ownership.",
+        "The Trade License classification varies based on the nature of the business: Industrial Trade License (manufacturing/industrial), Commercial Trade License (trading/retail/service), Food & Health Trade License (food production/sale).",
       features: [
-        "Annual Renewal",
-        "Address Change",
-        "Activity Modification",
-        "Ownership Transfer",
+        "Industrial Trade License",
+        "Commercial Trade License",
+        "Food & Health Trade License",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1080",
       imagePosition: "right",
       hasOverlappingImages: false,
       icon: Building2,
+    },
+    {
+      id: 4,
+      badge: "Why is a Trade License Important?",
+      title: "Legal, Safety & Credibility Benefits",
+      description:
+        "Legal Compliance, Ensures Public Safety, Zoning & Land Use Compliance, Prevents Unethical Practices, Enhances Business Credibility, Government Revenue Contribution.",
+      features: [
+        "Legal Compliance",
+        "Ensures Public Safety",
+        "Zoning & Land Use Compliance",
+        "Prevents Unethical Practices",
+        "Enhances Business Credibility",
+        "Government Revenue Contribution",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "left",
+      hasOverlappingImages: false,
+      icon: FileText,
+    },
+    {
+      id: 5,
+      badge: "Documents Required",
+      title: "Checklist for Trade License Application",
+      description:
+        "Electricity bill, Rent Agreement, or Property Tax receipt. Aadhaar Card, PAN Card, Voter ID, or Passport. GST Certificate, Certificate of Incorporation, or Partnership Deed. Memorandum of Association (MoA). NOC from property owner (if rented). Layout plan of business premises.",
+      features: [
+        "Electricity bill/Rent Agreement/Property Tax receipt",
+        "Aadhaar Card/PAN Card/Voter ID/Passport",
+        "GST Certificate/Certificate of Incorporation/Partnership Deed",
+        "Memorandum of Association (MoA)",
+        "NOC from property owner (if rented)",
+        "Layout plan of business premises",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: ShieldCheck,
+    },
+    {
+      id: 6,
+      badge: "Registration Process",
+      title: "How to Apply for Trade License",
+      description:
+        "Step 1: Visit Municipal Corporation Website. Step 2: Sign Up & Fill Application Form. Step 3: Upload Documents. Step 4: Fee Payment. Step 5: Verification & Inspection. Step 6: License Issuance.",
+      features: [
+        "Online application via municipal portal",
+        "Sign up & fill form",
+        "Upload documents",
+        "Pay fee online",
+        "Verification & inspection",
+        "License issuance",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "left",
+      hasOverlappingImages: false,
+      icon: FileText,
+    },
+    {
+      id: 7,
+      badge: "Validity & Renewal",
+      title: "Annual Renewal & Fee Structure",
+      description:
+        "Trade Licenses are valid for one year and must be renewed annually. Renewal applications must be submitted 30 days before expiry. Fees vary by business type, location, and size: Small Shops ₹500–₹5,000, Restaurants ₹5,000–₹50,000, Industrial Units ₹10,000–₹1,00,000.",
+      features: [
+        "Annual renewal required",
+        "Renew 30 days before expiry",
+        "Fee varies by business type",
+        "Small Shops: ₹500–₹5,000",
+        "Restaurants: ₹5,000–₹50,000",
+        "Industrial Units: ₹10,000–₹1,00,000",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: Building2,
+    },
+    {
+      id: 8,
+      badge: "Why Choose CapEasy?",
+      title: "CapEasy Makes Trade License Simple",
+      description:
+        "At CapEasy, we streamline the Trade License registration process by eliminating bureaucratic delays and ensuring error-free documentation experience. Our team understands the state-specific municipal regulations and handles the entire application process, from document preparation to approval, so you don't have to deal with complex legalities. We provide customized solutions to expedite approvals and prevent rejections, assist in site inspections, resolve objections, and ensure full compliance. CapEasy ensures you get your Trade License without unnecessary delays and supports renewals, modifications, and compliance at every step.",
+      features: [
+        "Streamlined registration process",
+        "Error-free documentation",
+        "State-specific municipal expertise",
+        "Customized solutions for approvals",
+        "Compliance & renewal support",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "left",
+      hasOverlappingImages: false,
+      icon: ShieldCheck,
     },
   ];
 
@@ -142,14 +241,14 @@ export default function TradeLicenses() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +279,7 @@ export default function TradeLicenses() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +289,7 @@ export default function TradeLicenses() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +316,7 @@ export default function TradeLicenses() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +327,20 @@ export default function TradeLicenses() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +391,7 @@ export default function TradeLicenses() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +407,7 @@ export default function TradeLicenses() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +430,7 @@ export default function TradeLicenses() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

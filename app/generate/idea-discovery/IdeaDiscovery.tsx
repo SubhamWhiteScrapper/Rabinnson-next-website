@@ -4,7 +4,7 @@ import { ImageWithFallback } from '@/components/Starc/ImageWithFallback';
 export default function IdeaDisco() {
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <div className="container mx-auto px-6 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content Section */}

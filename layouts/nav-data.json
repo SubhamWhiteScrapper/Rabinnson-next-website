@@ -178,36 +178,36 @@
       "icon": "FaChartLine",
       "title": "Financial Services",
       "items": [
-        { "label": "Banking Capital Markets", "path": "/industry/banking-capital-markets" },
-        { "label": "Insurance", "path": "/industry/insurance" }
+        { "label": "Banking Capital Markets", "path": "/industry/financial-services/banking-capital-markets" },
+        { "label": "Insurance", "path": "/industry/financial-services/insurance" }
       ]
     },
     {
       "icon": "FaBullhorn",
       "title": "Media & Education",
       "items": [
-        { "label": "Communications, Media, and Information Services", "path": "/industry/communications-media-information-services" },
-        { "label": "Education", "path": "/industry/education" }
+        { "label": "Communications, Media, and Information Services", "path": "/industry/media-education/communications-media-information-services" },
+        { "label": "Education", "path": "/industry/media-education/education" }
       ]
     },
     {
       "icon": "FaCog",
       "title": "Resources & Sustainability",
       "items": [
-        { "label": "Environment", "path": "/industry/environment" },
-        { "label": "Energy, Resources, and Utilities", "path": "/industry/energy-resources-utilities" },
-        { "label": "Manufacturing", "path": "/industry/manufacturing" }
+        { "label": "Environment", "path": "/industry/resources-sustainability/environment" },
+        { "label": "Energy, Resources, and Utilities", "path": "/industry/resources-sustainability/energy-resources-utilities" },
+        { "label": "Manufacturing", "path": "/industry/resources-sustainability/manufacturing" }
       ]
     },
     {
       "icon": "FaShoppingBag",
       "title": "Health & Public",
       "items": [
-        { "label": "Healthcare", "path": "/industry/healthcare" },
-        { "label": "Life Sciences", "path": "/industry/life-sciences" },
-        { "label": "Public Services", "path": "/industry/public-services" },
-        { "label": "Retail", "path": "/industry/retail" },
-        { "label": "Travel and Logistics", "path": "/industry/travel-logistics" }
+        { "label": "Healthcare", "path": "/industry/health-public/healthcare" },
+        { "label": "Life Sciences", "path": "/industry/health-public/life-sciences" },
+        { "label": "Public Services", "path": "/industry/health-public/public-services" },
+        { "label": "Retail", "path": "/industry/health-public/retail" },
+        { "label": "Travel and Logistics", "path": "/industry/health-public/travel-logistics" }
       ]
     }
   ],

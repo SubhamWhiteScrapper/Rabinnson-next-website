@@ -25,25 +25,26 @@ export default function ShopEstablishment() {
   const heroContent = {
     title: "Shop & Establishment Registration",
     description:
-      "Register your commercial establishment under the state Shop & Establishment Act. Mandatory for shops, restaurants, and commercial premises.",
-    ctaText: "Register Now",
+      "Shop and Establishment Registration is covered under Shop and Establishment Act which is under the State Legislation and each state has its own rules and regulations for the same. Rules for registration under Shop and Establishment Act are framed by the respective state governments due to which they differ from one state to another and the rules of that state need to be followed in which the enterprise is located/proposed to be located.",
+    ctaText: "Request a Call Back",
     ctaLink: "/contact",
-    subText: "Get a Free Consultation & Compliance Checklist",
+    subText: "Have a Question? Request a Call back: +91-7011 808 002",
   };
 
   const introContent = {
-    badge: "Shop & Establishment",
+    badge: "Benefits",
     badgeIcon: Store,
-    title: "Legal Authorization for Commercial Premises",
-    subtitle: "Shops and Establishments Act",
+    title: "Shop & Establishment Registration Benefits",
+    subtitle: "Legal Recognition & Employee Protection",
     description:
-      "Shop & Establishment registration is mandatory for all commercial establishments including shops, restaurants, theaters, and offices. It regulates working conditions, employee welfare, and operating hours.",
+      "Recognized Business: Registration helps in getting recognized as a registered business unit. Bank Account: Eases opening a current account. Protection of Rights: Protects rights of employer and employee. Trust: Increases customer trust. Regulation: Regulates wages, hours, terms, holidays, work conditions, and more. Sole Proprietorship: Gives legal identity to sole proprietors.",
     features: [
-      "Mandatory for Commercial Establishments",
-      "Regulates Working Conditions",
-      "Employee Welfare Compliance",
-      "Operating Hours Regulation",
-      "State-Specific Requirements",
+      "Recognized Business Unit",
+      "Bank Account Opening",
+      "Employer & Employee Rights Protection",
+      "Customer Trust",
+      "Regulation of Work Conditions",
+      "Legal Identity for Sole Proprietors",
     ],
     image1:
       "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +55,16 @@ export default function ShopEstablishment() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Registration",
-      title: "Quick S&E Registration",
+      badge: "How We Help You",
+      title: "Shop & Establishment Registration & Compliance",
       description:
-        "We handle the complete Shop & Establishment registration with your local labor department. From application to certificate issuance.",
+        "Applying for Registration, Follow-up with department, Obtaining Registration Certificate, Compliances under S&E Act. Join 5,000+ Entrepreneurs benefiting from our expertise.",
       features: [
-        "Application Preparation",
-        "Document Submission",
-        "Fee Payment",
-        "Certificate Issuance",
+        "Registration Application Assistance",
+        "Department Follow-up",
+        "Certificate Procurement",
+        "S&E Act Compliance",
+        "Expert Advisory (No external company names)",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +74,15 @@ export default function ShopEstablishment() {
     },
     {
       id: 2,
-      badge: "Compliance",
-      title: "Maintain Working Standards",
+      badge: "Procedure",
+      title: "Procedure for Shop & Establishment Registration",
       description:
-        "S&E Act compliance includes maintaining registers, displaying license, and following prescribed working hours and conditions.",
+        "1. Filling of Form\n2. Employee Details\n3. Submission of Form\n4. Issuance of Certificate. Details like Name, Classification, Category, Address of Establishment are required.",
       features: [
-        "Register Maintenance",
-        "Working Hours Compliance",
-        "Leave & Holiday Rules",
-        "Display Requirements",
+        "Form Filling",
+        "Employee Details Entry",
+        "Form Submission",
+        "Certificate Issuance",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=1080",
@@ -92,15 +94,17 @@ export default function ShopEstablishment() {
     },
     {
       id: 3,
-      badge: "Renewal & Amendment",
-      title: "Renewal & Modifications",
+      badge: "Eligibility & Documents",
+      title: "Who Should Register & Required Documents",
       description:
-        "S&E registration needs renewal as per state rules. We ensure timely renewal and help with amendments for changes in premises or workforce.",
+        "All commercial establishments (hotels, eateries, amusement parks, theaters, restaurants, etc.) must register. Application within 30 days of commencement. Penalties for non-registration. Documents: Passport photo, Shop photo, Name, PAN, Address Proof, Rent Agreement, Employee Details, Management List, Owner ID, Partnership deed/MOA/AOA.",
       features: [
-        "Timely Renewal",
-        "Address Amendment",
-        "Employee Count Update",
-        "Ownership Transfer",
+        "Mandatory for Commercial Establishments",
+        "Application within 30 days",
+        "Covers hotels, eateries, theaters, etc.",
+        "Passport Photo, Shop Photo, PAN, Address Proof",
+        "Rent Agreement, Employee & Management Details",
+        "Owner ID, Partnership Deed/MOA/AOA",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1080",
@@ -142,14 +146,14 @@ const [ ,setActiveSection] = useState(0);
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +184,7 @@ const [ ,setActiveSection] = useState(0);
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +194,7 @@ const [ ,setActiveSection] = useState(0);
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +221,7 @@ const [ ,setActiveSection] = useState(0);
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +232,20 @@ const [ ,setActiveSection] = useState(0);
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +296,7 @@ const [ ,setActiveSection] = useState(0);
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +312,7 @@ const [ ,setActiveSection] = useState(0);
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +335,7 @@ const [ ,setActiveSection] = useState(0);
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

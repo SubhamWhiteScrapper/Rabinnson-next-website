@@ -43,7 +43,7 @@ const CompanyPolicy = () => {
     description:
       "Comprehensive company policies tailored to your business needs. Establish clear guidelines for operations and governance.",
     ctaText: "Create Policies",
-    ctaLink: "/contact",
+    ctaLink: "/start-generating-your-idea",
     subText: "Establish Organizational Standards",
   };
   const introContent = {
@@ -178,8 +178,7 @@ const CompanyPolicy = () => {
         ref={ref}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full"
       >
-        {/* this is the extra commetns */}
-        <h1 className=" text-7xl text-red-600 font-bold">  Red  Warning Not completed conntent not available </h1>
+
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center">
           <div

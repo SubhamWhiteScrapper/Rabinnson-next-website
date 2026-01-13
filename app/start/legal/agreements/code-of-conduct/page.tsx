@@ -43,7 +43,7 @@ const CodeOfConduct = () => {
     description:
       "Establish ethical standards and behavioral guidelines that foster a positive and respectful workplace culture.",
     ctaText: "Create Code",
-    ctaLink: "/contact",
+    ctaLink: "/start-generating-your-idea",
     subText: "Build an Ethical Workplace Culture",
   };
   const introContent = {
@@ -178,8 +178,7 @@ const CodeOfConduct = () => {
         ref={ref}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full"
       >
-        {/* this is the extra commetns */}
-        <h1 className=" text-7xl text-red-600 font-bold">  Red  Warning Not completed conntent not available </h1>
+
         <div className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center">
           <div
             className={`flex flex-col justify-center space-y-4 sm:space-y-6 transition-all duration-700 ease-out ${

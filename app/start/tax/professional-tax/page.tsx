@@ -25,25 +25,25 @@ export default function ProfessionalTax() {
   const heroContent = {
     title: "Professional Tax Registration",
     description:
-      "Register for Professional Tax compliance in your state. Mandatory for employers and professionals earning above threshold.",
-    ctaText: "Register Now",
+      "Professional Tax is a tax levied by various state governments of India on salaried individuals working in government or non-government entities or in practice of a profession such as Chartered Accountants, Lawyers, Doctors, etc. or carry out some form of business. Since it is a tax levied by the states, the rates and methods of collection vary from state to state.",
+    ctaText: "Request a Call Back",
     ctaLink: "/contact",
-    subText: "Get a Free Consultation & Compliance Checklist",
+    subText: "Have a Question? Request a Call back: +91-7011 808 002",
   };
 
   const introContent = {
-    badge: "Professional Tax",
+    badge: "Legal Provisions Of PT",
     badgeIcon: Landmark,
-    title: "State-Level Tax Compliance",
-    subtitle: "Profession, Trade & Employment Tax",
+    title: "Professional Tax: State Coverage & Compliance",
+    subtitle: "State-Specific Registration & Deduction",
     description:
-      "Professional Tax is a state-level tax levied on income earned through profession, trade, or employment. Employers must register and deduct PT from employee salaries, while professionals must obtain registration and pay directly.",
+      "States Covered: Andhra Pradesh, Assam, Chattisgarh, Gujarat, Karnataka, Kerala, Maharashtra, Madhya Pradesh, Meghalya, Odisha, Sikkim, Tamil Nadu, Telangana, Tripura, West Bengal.\nWho to bear: Deducted from salary by employers and deposited with State Government.\nWhen to register: Mandatory within 30 days of employing staff or starting practice.\nDeduction: Employees can claim deduction in the year tax is paid.\nEasy Compliance: Simple process.\nRate: Varies by state, generally slab-based.",
     features: [
-      "State-Specific Tax Rates",
-      "Employer Deduction Duty",
-      "Maximum ₹2,500 Per Annum",
-      "Monthly/Annual Filing",
-      "Employee PT Deduction",
+      "Covers 15+ Indian States",
+      "Employer Deduction & Deposit",
+      "Mandatory Registration Timeline",
+      "Employee Deduction Claim",
+      "Slab-Based State Rates",
     ],
     image1:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +54,16 @@ export default function ProfessionalTax() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Registration",
-      title: "PT Registration for Employers",
+      badge: "How We Help You",
+      title: "Professional Tax Registration & Compliance",
       description:
-        "We help employers register for Professional Tax with the state tax department and set up employee PT deduction.",
+        "Obtaining PT Registration, Assistance in PT Payment, Computation of PT, Payroll Management, Filing of PT Returns. Join 5,000+ Entrepreneurs benefiting from our expertise.",
       features: [
-        "Employer Registration",
-        "Employee Enrollment",
-        "Rate Calculation",
-        "Deduction Setup",
+        "PT Registration Assistance",
+        "PT Payment Support",
+        "Payroll Management",
+        "PT Returns Filing",
+        "Expert Advisory (No external company names)",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +73,15 @@ export default function ProfessionalTax() {
     },
     {
       id: 2,
-      badge: "Compliance",
-      title: "Monthly PT Filing",
+      badge: "Process Steps",
+      title: "Process Of Professional Tax Registration",
       description:
-        "PT requires monthly or annual filing depending on your state. We ensure timely deposits and return filing.",
+        "1. Submission of Documents\n2. Filing of Application\n3. Follow-up with Authorities\n4. Grant of Registration Certificate. Submit requisite documents, our team vets and notifies deficiencies, if any.",
       features: [
-        "Monthly Challan Payment",
-        "Return Filing",
-        "Employee Records",
-        "Compliance Calendar",
+        "Document Submission",
+        "Application Filing",
+        "Authority Follow-up",
+        "Certificate Grant",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
@@ -92,15 +93,18 @@ export default function ProfessionalTax() {
     },
     {
       id: 3,
-      badge: "Multi-State",
-      title: "Multi-State PT Management",
+      badge: "Eligibility & Documents",
+      title: "Who Should Register & Required Documents",
       description:
-        "Operating in multiple states? We manage PT compliance across all your locations with state-specific requirements.",
+        "Employers who deduct PT from salaries and deposit with government, including corporates, individuals, and freelancers (subject to state threshold).\nDocuments: Certificate of Incorporation, LLP Agreement, Employee PAN, Premises Proof, Bank Details, Director Details, Board Resolution, Employee List, Attendance & Salary Register.",
       features: [
-        "Multi-State Registration",
-        "Consolidated Management",
-        "State-Wise Filing",
-        "Compliance Tracking",
+        "Employers & Freelancers (as per state)",
+        "Certificate of Incorporation/LLP Agreement",
+        "Employee PAN & Details",
+        "Premises Proof & NOC",
+        "Bank Details & Cancelled Cheque",
+        "Director Details & Board Resolution",
+        "Employee List & Registers",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1080",
@@ -142,14 +146,14 @@ export default function ProfessionalTax() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +184,7 @@ export default function ProfessionalTax() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +194,7 @@ export default function ProfessionalTax() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +221,7 @@ export default function ProfessionalTax() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +232,20 @@ export default function ProfessionalTax() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +296,7 @@ export default function ProfessionalTax() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +312,7 @@ export default function ProfessionalTax() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +335,7 @@ export default function ProfessionalTax() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}
