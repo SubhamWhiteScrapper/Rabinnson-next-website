@@ -161,17 +161,17 @@ export default function MobileNavigation({
 
   const renderItems = (items: NavItem[]) => (
     <div className="flex flex-col gap-[4px] pl-[12px]">
-      {items.map((item) => (
+          {items.map((item) => (
         <Link
           key={item.path}
           href={item.path}
           onClick={handleOpen}
           className={`text-[13px] py-[5px] transition-colors flex items-center gap-[8px]
-            ${pathname === item.path ? "text-[#6B21A8] font-medium" : "text-[#444]"}
-            hover:text-[#6B21A8]
+            ${pathname === item.path ? "text-[#081f5f] font-medium" : "text-[#444]"}
+            hover:text-[#152238]
           `}
         >
-          <span className="w-[4px] h-[4px] rounded-full bg-[#9333EA]" />
+          <span className="w-[4px] h-[4px] rounded-full bg-[#152238]" />
           {item.label}
         </Link>
       ))}
@@ -195,10 +195,10 @@ export default function MobileNavigation({
       <div key={categoryKey} className="flex flex-col">
         <button
           onClick={() => toggleCategory(categoryKey)}
-          className="flex items-center justify-between text-left text-[13px] py-[8px] text-[#333] hover:text-[#6B21A8] transition-colors"
+            className="flex items-center justify-between text-left text-[13px] py-[8px] text-[#333] hover:text-[#152238] transition-colors"
         >
           <span className="font-medium flex items-center gap-[8px]">
-            <span className="text-[#9333EA]">{icon}</span>
+            <span className="text-[#152238]">{icon}</span>
             {category.title || "Items"}
           </span>
           {hasSubItems &&
@@ -239,8 +239,8 @@ export default function MobileNavigation({
             href="/"
             onClick={handleOpen}
             className={`flex items-center gap-[12px] text-[16px] py-[12px] px-[8px] rounded-lg transition-all
-              ${pathname === "/" ? "font-bold text-[#6B21A8] bg-[#F3E8FF]" : "text-[#333]"}
-              hover:text-[#6B21A8] hover:bg-[#FAF5FF]
+              ${pathname === "/" ? "font-bold text-[#152238] bg-[#EAF3FF]" : "text-[#333]"}
+              hover:text-[#152238] hover:bg-[#F5FAFF]
             `}
           >
             <Home className="w-[18px] h-[18px]" />
@@ -264,8 +264,8 @@ export default function MobileNavigation({
                   href={item.path}
                   onClick={handleOpen}
                   className={`flex items-center gap-[12px] text-[16px] py-[12px] px-[8px] rounded-lg transition-all
-                    ${isActive ? "font-bold text-[#6B21A8] bg-[#F3E8FF]" : "text-[#333]"}
-                    hover:text-[#6B21A8] hover:bg-[#FAF5FF]
+                    ${isActive ? "font-bold text-[#152238] bg-[#EAF3FF]" : "text-[#333]"}
+                    hover:text-[#152238] hover:bg-[#F5FAFF]
                   `}
                 >
                   {icon}
@@ -279,8 +279,8 @@ export default function MobileNavigation({
                 <button
                   onClick={() => toggleItem(item.name)}
                   className={`flex items-center justify-between text-[16px] py-[12px] px-[8px] rounded-lg text-left transition-all
-                    ${isActive ? "font-bold text-[#6B21A8] bg-[#F3E8FF]" : "text-[#333]"}
-                    hover:text-[#6B21A8] hover:bg-[#FAF5FF]
+                    ${isActive ? "font-bold text-[#152238] bg-[#F3E8FF]" : "text-[#333]"}
+                    hover:text-[#152238] hover:bg-[#FAF5FF]
                   `}
                 >
                   <span className="flex items-center gap-[12px]">
@@ -295,14 +295,14 @@ export default function MobileNavigation({
                 </button>
 
                 {isExpanded && (
-                  <div className="flex flex-col gap-[2px] pl-[16px] py-[8px] ml-[12px] border-l-2 border-[#E9D5FF]">
+                  <div className="flex flex-col gap-[2px] pl-[16px] py-[8px] ml-[12px] border-l-2 border-[#E6F0FF]">
                     {/* Link to main section page */}
                     <Link
                       href={item.path}
                       onClick={handleOpen}
-                      className="text-[14px] py-[6px] text-[#9333EA] hover:text-[#6B21A8] transition-colors font-medium flex items-center gap-[8px]"
-                    >
-                      <span className="w-[6px] h-[6px] rounded-full bg-[#9333EA]" />
+                      className="text-[14px] py-[6px] text-[#152238] hover:text-[#152238] transition-colors font-medium flex items-center gap-[8px]"
+                      >
+                        <span className="w-[6px] h-[6px] rounded-full bg-[#152238]" />
                       View All {item.name}
                     </Link>
 
@@ -321,8 +321,8 @@ export default function MobileNavigation({
             href="/contact"
             onClick={handleOpen}
             className={`flex items-center gap-[12px] text-[16px] py-[12px] px-[8px] rounded-lg transition-all
-              ${pathname === "/contact" ? "font-bold text-[#6B21A8] bg-[#F3E8FF]" : "text-[#333]"}
-              hover:text-[#6B21A8] hover:bg-[#FAF5FF]
+              ${pathname === "/contact" ? "font-bold text-[#152238] bg-[#F3E8FF]" : "text-[#333]"}
+              hover:text-[#152238] hover:bg-[#FAF5FF]
             `}
           >
             <Phone className="w-[18px] h-[18px]" />

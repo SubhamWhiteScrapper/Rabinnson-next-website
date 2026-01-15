@@ -11,6 +11,74 @@ import Input from "@/components/input";
 import Button from "@/components/button";
 import clsx from "clsx";
 
+// --- Validation Helpers ---
+export const isEmailValid = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+export const isIndianMobileValid = (mobile: string) => /^[6-9]\d{9}$/.test(mobile);
+export const isNotEmpty = (value: string) => value.trim().length > 0;
+
+// --- Types ---
+export interface IdeaFormData {
+    fullName: string;
+    email: string;
+    mobileNumber: string;
+    city: string;
+    currentStage: string;
+    isRegistered: boolean;
+    industry: string;
+    description: string;
+    support: string[];
+    preferredMode: string;
+    preferredTimeSlot: string;
+    consent: boolean;
+}
+
+export interface FormErrors {
+    [key: string]: string;
+}
+
+// --- Validation Logic ---
+export const validateIdeaForm = (data: IdeaFormData): FormErrors => {
+    const errors: FormErrors = {};
+
+    if (data.fullName.trim().length < 3) {
+        errors.fullName = "Full name must be at least 3 characters";
+    }
+
+    if (!isEmailValid(data.email)) {
+        errors.email = "Invalid email address";
+    }
+
+    if (!isIndianMobileValid(data.mobileNumber)) {
+        errors.mobileNumber = "Invalid mobile number";
+    }
+
+    if (!data.currentStage) {
+        errors.currentStage = "Please select current stage";
+    }
+
+    if (data.description.trim().length < 20) {
+        errors.description = "Description must be at least 20 characters";
+    }
+
+    if (data.support.length === 0) {
+        errors.support = "Select at least one support option";
+    }
+
+    if (!data.preferredMode) {
+        errors.preferredMode = "Select preferred mode";
+    }
+
+    if (!data.preferredTimeSlot) {
+        errors.preferredTimeSlot = "Select time slot";
+    }
+
+    if (!data.consent) {
+        errors.consent = "Consent is required";
+    }
+
+    return errors;
+};
+
 // --- Custom Select Component ---
 interface CustomSelectProps {
     label?: string;
@@ -20,10 +88,11 @@ interface CustomSelectProps {
     placeholder?: string;
     icon?: React.ElementType;
     required?: boolean;
+    error?: string;
 }
 
 const CustomSelect: React.FC<CustomSelectProps> = ({
-    label, value, onChange, options, placeholder = "Select...", icon: Icon, required
+    label, value, onChange, options, placeholder = "Select...", icon: Icon, required, error
 }) => {
     const [isOpen, setIsOpen] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -91,6 +160,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
                     </div>
                 )}
             </div>
+            {error && <p className="text-xs text-rose-500 font-medium ml-1">{error}</p>}
         </div>
     );
 };
@@ -111,6 +181,10 @@ const IdeaForm = () => {
         preferredTimeSlot: "",
         consent: false,
     });
+    const [errors, setErrors] = useState<FormErrors>({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [successMessage, setSuccessMessage] = useState<string | null>(null);
+    const [serverError, setServerError] = useState<string | null>(null);
 
     const stages = ["Just an idea", "Validating the idea", "MVP / Prototype ready"];
     const industries = ["Technology / IT", "E-commerce", "Healthcare", "Education", "Manufacturing", "Other"];
@@ -137,6 +211,10 @@ const IdeaForm = () => {
         } else {
             setFormData(prev => ({ ...prev, [name]: value }));
         }
+        // Clear error when user types
+        if (errors[name]) {
+            setErrors(prev => ({ ...prev, [name]: "" }));
+        }
     };
 
     const handleSupportChange = (option: string) => {
@@ -144,18 +222,72 @@ const IdeaForm = () => {
             const newSupport = prev.support.includes(option) ? prev.support.filter(s => s !== option) : [...prev.support, option];
             return { ...prev, support: newSupport };
         });
+        if (errors.support) {
+            setErrors(prev => ({ ...prev, support: "" }));
+        }
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const resetForm = () => {
+        setFormData({
+            fullName: "",
+            email: "",
+            mobileNumber: "",
+            city: "",
+            currentStage: "",
+            isRegistered: false,
+            industry: "",
+            description: "",
+            support: [] as string[],
+            preferredMode: "",
+            preferredTimeSlot: "",
+            consent: false,
+        });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log(formData);
-        alert("Application Submitted!");
+        setServerError(null);
+        setSuccessMessage(null);
+
+        const newErrors = validateIdeaForm(formData as IdeaFormData);
+        setErrors(newErrors);
+
+        if (Object.keys(newErrors).length > 0) {
+            // validation errors on client — show them
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        try {
+            const res = await fetch('/api/send-idea', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            const json = await res.json();
+            if (!res.ok) {
+                if (res.status === 400 && json.errors) {
+                    setErrors(json.errors);
+                    setServerError('Please correct the highlighted fields.');
+                } else {
+                    setServerError(json.error || 'Server error sending submission.');
+                }
+                return;
+            }
+
+            setSuccessMessage('Thanks — your idea has been submitted. We will contact you shortly.');
+            resetForm();
+        } catch (err) {
+            console.error('submit error', err);
+            setServerError('Network error — please try again later.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
-    // --- Styles ---
-    // Updated strategy: Render label manually, then use relative wrapper for input + icon to allow perfect centering
-    // Increased icon size to w-5 h-5 (20px)
-    // Increased padding left to pl-12 (3rem)
+
 
     const renderInput = (
         label: string,
@@ -163,7 +295,8 @@ const IdeaForm = () => {
         icon: React.ElementType,
         placeholder: string,
         type: "text" | "email" | "textarea" = "text",
-        required = false
+        required = false,
+        error?: string
     ) => {
         const Icon = icon;
         return (
@@ -187,10 +320,12 @@ const IdeaForm = () => {
                         // NO LABEL prop here to avoid double label rendering and allow custom wrapper control
                         className={clsx(
                             "!rounded-[2px] !pl-[3.25rem] !py-3.5 !text-base bg-[#F8F9FA] dark:bg-[#1D1D1D] border border-slate-200 focus:border-slate-900 transition-all duration-300 placeholder:text-[#8D8D8D] focus:bg-white focus:shadow-sm",
-                            type === "textarea" && "!pt-3.5 min-h-[100px]"
+                            type === "textarea" && "!pt-3.5 min-h-[100px]",
+                            error && "!border-rose-500 focus:!border-rose-500"
                         )}
                     />
                 </div>
+                {error && <p className="text-xs text-rose-500 font-medium ml-1">{error}</p>}
             </div>
         );
     };
@@ -199,6 +334,12 @@ const IdeaForm = () => {
         // Increased max-width to max-w-5xl
         <div className="w-full max-w-5xl mx-auto p-8 sm:p-12 bg-white rounded-[2px] shadow-2xl border border-slate-100">
             <form onSubmit={handleSubmit} className="space-y-10">
+                {successMessage && (
+                    <div className="p-3 bg-emerald-50 text-emerald-800 rounded border border-emerald-100">{successMessage}</div>
+                )}
+                {serverError && (
+                    <div className="p-3 bg-rose-50 text-rose-800 rounded border border-rose-100">{serverError}</div>
+                )}
 
                 {/* Section 1: Personal Details */}
                 <section className="space-y-5">
@@ -211,12 +352,12 @@ const IdeaForm = () => {
 
                     <div className="grid grid-cols-1 gap-5">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                            {renderInput("Full Name", "fullName", User, "John Doe", "text", true)}
-                            {renderInput("Email Address", "email", Mail, "john@example.com", "email", true)}
+                            {renderInput("Full Name", "fullName", User, "John Doe", "text", true, errors.fullName)}
+                            {renderInput("Email Address", "email", Mail, "john@example.com", "email", true, errors.email)}
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                            {renderInput("Mobile Number", "mobileNumber", Smartphone, "+91...", "text", true)}
-                            {renderInput("City / Location", "city", MapPin, "Bangalore", "text", false)}
+                            {renderInput("Mobile Number", "mobileNumber", Smartphone, "+91...", "text", true, errors.mobileNumber)}
+                            {renderInput("City / Location", "city", MapPin, "Bangalore", "text", false, errors.city)}
                         </div>
                     </div>
                 </section>
@@ -232,11 +373,11 @@ const IdeaForm = () => {
 
                     <div className="space-y-5">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                            <CustomSelect label="Current Stage" value={formData.currentStage} onChange={(v) => setFormData(d => ({ ...d, currentStage: v }))} options={stages} icon={Layers} required />
+                            <CustomSelect label="Current Stage" value={formData.currentStage} onChange={(v) => { setFormData(d => ({ ...d, currentStage: v })); if (errors.currentStage) setErrors(e => ({ ...e, currentStage: '' })) }} options={stages} icon={Layers} required error={errors.currentStage} />
                             <CustomSelect label="Industry" value={formData.industry} onChange={(v) => setFormData(d => ({ ...d, industry: v }))} options={industries} icon={Building} />
                         </div>
 
-                        {renderInput("Idea Description", "description", FileText, "What are you building?", "textarea", true)}
+                        {renderInput("Idea Description", "description", FileText, "What are you building?", "textarea", true, errors.description)}
 
                         <label className="flex items-center gap-3 cursor-pointer group p-3 rounded-[2px] border border-transparent hover:bg-slate-50 transition-colors -mt-2">
                             <div className="relative flex items-center justify-center">
@@ -260,7 +401,9 @@ const IdeaForm = () => {
 
                     <div className="space-y-6">
                         <div className="space-y-3">
-                            <Typography size={14} weight={600} className="text-slate-700 ml-1">Assistance Needed</Typography>
+                            <Typography size={14} weight={600} className="text-slate-700 ml-1">
+                                Assistance Needed <span className="text-rose-500">*</span>
+                            </Typography>
                             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
                                 {supportOptions.map((opt) => (
                                     <label key={opt.label} className={clsx(
@@ -273,11 +416,14 @@ const IdeaForm = () => {
                                     </label>
                                 ))}
                             </div>
+                            {errors.support && <p className="text-xs text-rose-500 font-medium ml-1">{errors.support}</p>}
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div className="space-y-2">
-                                <Typography size={14} weight={600} className="text-slate-700 ml-1">Preferred Mode</Typography>
+                                <Typography size={14} weight={600} className="text-slate-700 ml-1">
+                                    Preferred Mode <span className="text-rose-500">*</span>
+                                </Typography>
                                 <div className="flex gap-3 h-[52px]"> {/* Fixed height matching input */}
                                     {modes.map((m) => (
                                         <label key={m.id} className={clsx(
@@ -290,8 +436,9 @@ const IdeaForm = () => {
                                         </label>
                                     ))}
                                 </div>
+                                {errors.preferredMode && <p className="text-xs text-rose-500 font-medium ml-1">{errors.preferredMode}</p>}
                             </div>
-                            <CustomSelect label="Preferred Time" value={formData.preferredTimeSlot} onChange={(v) => setFormData(d => ({ ...d, preferredTimeSlot: v }))} options={timeSlots} icon={Calendar} />
+                            <CustomSelect label="Preferred Time" value={formData.preferredTimeSlot} onChange={(v) => { setFormData(d => ({ ...d, preferredTimeSlot: v })); if (errors.preferredTimeSlot) setErrors(e => ({ ...e, preferredTimeSlot: '' })) }} options={timeSlots} icon={Calendar} required error={errors.preferredTimeSlot} />
                         </div>
                     </div>
                 </section>
@@ -306,9 +453,20 @@ const IdeaForm = () => {
                         </div>
                         <span className="text-sm text-slate-500">I agree to be contacted by the team and accept the <span className="text-slate-900 hover:underline font-semibold">Terms & Privacy Policy</span>.</span>
                     </label>
+                    {errors.consent && <p className="text-xs text-rose-500 font-medium ml-2 -mt-4">{errors.consent}</p>}
 
-                    <Button type="submit" variant="form" className="w-full py-4 text-lg font-bold !rounded-[2px] shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all bg-slate-900 text-white flex items-center justify-center gap-3">
-                        Submit Application <ArrowRight className="w-5 h-5" />
+                    <Button type="submit" variant="form" disabled={isSubmitting} aria-busy={isSubmitting} className={clsx("w-full py-4 text-lg font-bold !rounded-[2px] shadow-lg transition-all bg-slate-900 text-white flex items-center justify-center gap-3", isSubmitting ? "opacity-70 pointer-events-none" : "hover:shadow-xl hover:translate-y-[-2px]") }>
+                        {isSubmitting ? (
+                            <>
+                                <svg className="animate-spin w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                                </svg>
+                                <span>Submitting...</span>
+                            </>
+                        ) : (
+                            <>Submit Application <ArrowRight className="w-5 h-5" /></>
+                        )}
                     </Button>
                 </div>
             </form>

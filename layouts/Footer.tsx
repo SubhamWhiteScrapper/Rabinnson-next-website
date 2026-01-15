@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import Logo from "@/assets/images/a.png";
+const Logo = "/a.png";
 import XLogo from "@/assets/images/XLogo.svg";
 import InstagramLogo from "@/assets/images/InstagramLogo.svg";
 import LinkedinLogo from "@/assets/images/LinkedinLogo.svg";
@@ -43,10 +43,12 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="flex flex-col gap-[24px] w-[70%] lg:w-[20%]">
             <Image
-  src={Logo}
-  alt="Company Logo"
-  className="w-full h-auto"
-/>
+              src={Logo}
+              alt="Company Logo"
+              width={200}
+              height={60}
+              className="w-full h-auto"
+            />
 
             <div className="font-medium text-white leading-[24px]">
               We Drive Real Result, More Traffic, More Leads, more Growth!
