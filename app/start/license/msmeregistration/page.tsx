@@ -25,7 +25,7 @@ export default function MSMERegistration() {
   const heroContent = {
     title: "MSME Udyam Registration",
     description:
-      "Get official recognition as a Micro, Small, or Medium Enterprise. Access government schemes, subsidies, and priority lending benefits.",
+      "CapEasy enables micro, small, and medium businesses to unlock government incentives, easier loan access, and tax benefits through MSME Udyam Registration. As a government-recognized MSME, your business gains formal recognition that facilitates participation in tenders, protection under delayed payment laws, and eligibility for subsidies and credit schemes. We ensure accurate classification and hassle-free registration on the Udyam portal—so your business can scale with security and support.",
     ctaText: "Register Now",
     ctaLink: "/contact",
     subText: "Get a Free Consultation & Compliance Checklist",
@@ -34,16 +34,16 @@ export default function MSMERegistration() {
   const introContent = {
     badge: "MSME Registration",
     badgeIcon: Briefcase,
-    title: "Unlock MSME Benefits for Your Business",
-    subtitle: "Udyam Registration Portal",
+    title: "CapEasy's MSME Udyam Registration Services",
+    subtitle: "End-to-End Support for MSMEs",
     description:
-      "MSME Udyam Registration provides official recognition to your business as a Micro, Small, or Medium Enterprise. This opens doors to various government schemes, subsidies, and priority sector lending benefits.",
+      "Our MSME Udyam Registration Services Include:",
     features: [
-      "Easy Access to Credit & Loans",
-      "Subsidy on Patent Registration",
-      "Tax Benefits & Exemptions",
-      "Government Tender Preference",
-      "Lower Interest Rates",
+      "Business eligibility analysis and category classification (Micro/Small/Medium)",
+      "Complete Udyam application filing on the official portal",
+      "Assistance in linking PAN and GST to the Udyam system",
+      "Generation and delivery of Udyam Certificate",
+      "Advisory on post-registration benefits and schemes",
     ],
     image1:
       "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +54,14 @@ export default function MSMERegistration() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Registration Process",
-      title: "Simple Online Registration",
+      badge: "Overview",
+      title: "What is MSME Udyam Registration?",
       description:
-        "Udyam registration is a completely online process linked with Aadhaar and PAN. We help you complete the registration quickly and accurately.",
+        "The Ministry of Micro, Small, and Medium Enterprises (MSME), Government of India, introduced the Udyam Registration system to streamline the classification and recognition of MSMEs. This system, implemented on July 1, 2020, offers a range of benefits to support their growth and sustainability. By registering through the official Udyam portal, businesses can access various incentives and support mechanisms.",
       features: [
-        "Aadhaar & PAN Verification",
-        "Business Details Submission",
-        "Classification Determination",
-        "Certificate Generation",
+        "Streamlined MSME classification and recognition",
+        "Access to incentives and support mechanisms",
+        "Implemented July 1, 2020",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +71,14 @@ export default function MSMERegistration() {
     },
     {
       id: 2,
-      badge: "Benefits Access",
-      title: "Avail Government Schemes",
+      badge: "Who Can Register?",
+      title: "Eligibility for Udyam Registration",
       description:
-        "With Udyam registration, you become eligible for numerous government schemes including credit guarantee, technology upgradation, and market development assistance.",
+        "Any micro, small, or medium enterprise (MSME) that meets the investment and turnover criteria defined in the India Gazette notification dated June 26, 2020, can apply for Udyam Registration. Micro: Investment up to ₹1 crore & turnover up to ₹5 crore. Small: Investment up to ₹10 crore & turnover up to ₹50 crore. Medium: Investment up to ₹50 crore & turnover up to ₹250 crore.",
       features: [
-        "Credit Guarantee Scheme",
-        "Technology Upgradation Fund",
-        "Market Development Assistance",
-        "Cluster Development",
+        "Micro: Up to ₹1 crore investment, ₹5 crore turnover",
+        "Small: Up to ₹10 crore investment, ₹50 crore turnover",
+        "Medium: Up to ₹50 crore investment, ₹250 crore turnover",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1080",
@@ -92,21 +90,63 @@ export default function MSMERegistration() {
     },
     {
       id: 3,
-      badge: "Growth Support",
-      title: "Scale with Government Support",
+      badge: "Key Benefits",
+      title: "Why Register as an MSME?",
       description:
-        "As your business grows, we help you update your Udyam registration and leverage additional benefits available for growing MSMEs.",
+        "Getting registered as an MSME under Udyam has multiple financial, operational, and growth-related benefits. From priority lending to government subsidies, registration ensures enterprises gain access to the right resources and support systems. Tax & Fee Exemptions, Government Subsidies, Financial Benefits from Banks, Business Incubation & Innovation Support, Operational & Growth Benefits, Utility & Infrastructure Benefits, Government Initiatives & Loan Schemes for MSMEs.",
       features: [
-        "Registration Updates",
-        "Re-classification Support",
-        "Compliance Assistance",
-        "Scheme Application Help",
+        "Tax & Fee Exemptions",
+        "Government Subsidies",
+        "Financial Benefits from Banks",
+        "Business Incubation & Innovation Support",
+        "Operational & Growth Benefits",
+        "Utility & Infrastructure Benefits",
+        "Government Initiatives & Loan Schemes",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1080",
       imagePosition: "right",
       hasOverlappingImages: false,
       icon: Building2,
+    },
+    {
+      id: 4,
+      badge: "Documents Required",
+      title: "What You Need for Udyam Registration",
+      description:
+        "The MSME Udyam Registration process is entirely online and paperless, simplifying the registration experience for enterprises. The registration is based on self-declaration, minimizing the need for extensive documentation. Below are the essential documents and details required for registration: Aadhar Card of the Authorised Signatory, PAN card of the Firm, GSTIN, Basic Business Information, Bank Account Details, Enterprise Classification, Investment & Turnover Details.",
+      features: [
+        "Aadhar Card of the Authorised Signatory",
+        "PAN card of the Firm",
+        "GSTIN (Goods and Services Tax Identification Number)",
+        "Basic Business Information",
+        "Bank Account Details",
+        "Enterprise Classification",
+        "Investment & Turnover Details",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "left",
+      hasOverlappingImages: false,
+      icon: FileText,
+    },
+    {
+      id: 5,
+      badge: "Why Choose CapEasy?",
+      title: "CapEasy Makes MSME Registration Simple",
+      description:
+        "At CapEasy, we ensure a smooth, fast, and error-free MSME registration process so you can focus on growing your business. We handle all documentation, compliance checks, and submission for you. Our MSME specialists help choose the right category and maximize benefits. Register on MSME Udyam with CapEasy today and embark on your journey towards growth and success.",
+      features: [
+        "Smooth, fast, and error-free process",
+        "All documentation and compliance handled",
+        "Specialist guidance for category selection",
+        "Maximize post-registration benefits",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: ShieldCheck,
     },
   ];
 
@@ -142,14 +182,14 @@ export default function MSMERegistration() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +220,7 @@ export default function MSMERegistration() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +230,7 @@ export default function MSMERegistration() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +257,7 @@ export default function MSMERegistration() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +268,20 @@ export default function MSMERegistration() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +332,7 @@ export default function MSMERegistration() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +348,7 @@ export default function MSMERegistration() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +371,7 @@ export default function MSMERegistration() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

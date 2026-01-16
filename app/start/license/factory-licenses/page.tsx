@@ -25,7 +25,7 @@ export default function FactoryLicenses() {
   const heroContent = {
     title: "Factory License Registration",
     description:
-      "Get your factory license under the Factories Act. Ensure legal compliance for manufacturing operations with proper worker safety standards.",
+      "CapEasy ensures manufacturers and industrial businesses operate legally and safely with mandatory Factory Licenses under the Factories Act, 1948. This license is essential for units employing workers and using power for manufacturing, ensuring safety, hygiene, and labor compliance.",
     ctaText: "Register Now",
     ctaLink: "/contact",
     subText: "Get a Free Consultation & Compliance Checklist",
@@ -34,16 +34,17 @@ export default function FactoryLicenses() {
   const introContent = {
     badge: "Factory License",
     badgeIcon: Factory,
-    title: "Legal Authorization for Manufacturing Operations",
-    subtitle: "Compliance Under Factories Act, 1948",
+    title: "Your Compliance Partner for Factory Licenses",
+    subtitle: "Mandatory Approval for Manufacturing Units",
     description:
-      "Factory license is a mandatory legal requirement for any manufacturing establishment under the Factories Act. It ensures worker safety, environmental compliance, and proper operational standards for your factory.",
+      "A Factory License is a mandatory approval issued under the Factories Act, 1948, ensuring worker safety, legal compliance, and operational transparency. Before a factory can commence operations, it must register with the Department of Factories and Boilers, undergo safety inspections, and obtain a valid license. This license serves as official authorization for manufacturing activities, regulating working conditions, power usage, and labor welfare.",
     features: [
-      "Mandatory for 10+ workers with power",
-      "20+ workers without power",
-      "Worker safety compliance",
-      "Environmental norms adherence",
-      "Annual renewal support",
+      "Eligibility assessment and activity categorization",
+      "Preparation of site layout plans and safety documentation",
+      "Filing of license application with the Chief Inspector of Factories",
+      "Coordination for departmental inspection and approvals",
+      "Renewal tracking, modification filing, and labor law compliance advisory",
+      "Consultation By Expert",
     ],
     image1:
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +55,17 @@ export default function FactoryLicenses() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Registration Process",
-      title: "Complete Factory Registration",
+      badge: "Overview & Eligibility",
+      title: "What is a Factory License?",
       description:
-        "We handle the entire factory license registration process. From documentation to submission and follow-up with the factory inspectorate, we ensure smooth approval.",
+        "A Factory License is mandatory for establishments involved in manufacturing processes with 10 or more workers using power, 20 or more workers without power, or hazardous manufacturing units. It ensures compliance with workplace safety standards, legal authorization, and operational transparency.",
       features: [
-        "Factory Plan Approval",
-        "License Application Filing",
-        "Inspector Liaison",
-        "Compliance Documentation",
+        "10+ workers with power",
+        "20+ workers without power",
+        "Hazardous manufacturing units",
+        "Legal compliance and safety",
+        "Environmental & fire safety compliance",
+        "Employment regulation",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +75,17 @@ export default function FactoryLicenses() {
     },
     {
       id: 2,
-      badge: "Compliance & Safety",
-      title: "Maintain Safety Standards",
+      badge: "Classification & Benefits",
+      title: "Factory Types & License Benefits",
       description:
-        "Factory compliance involves regular inspections and adherence to safety norms. We help you maintain all required safety measures and documentation.",
+        "Factories are classified as hazardous or non-hazardous. A Factory License ensures legal protection, worker welfare, productivity boost, and access to government approvals and subsidies.",
       features: [
-        "Safety Equipment Compliance",
-        "Worker Welfare Measures",
-        "Environmental Clearances",
-        "Regular Audit Support",
+        "Hazardous: chemicals, explosives, toxic materials",
+        "Non-hazardous: textiles, food, paper mills",
+        "Legal protection",
+        "Worker welfare & safety",
+        "Productivity boost",
+        "Government approvals",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1080",
@@ -92,15 +97,77 @@ export default function FactoryLicenses() {
     },
     {
       id: 3,
-      badge: "Renewal & Expansion",
-      title: "Hassle-Free Renewal & Amendments",
+      badge: "Checklist & Documents",
+      title: "Application Checklist & Required Documents",
       description:
-        "Factory licenses require annual renewal and amendments for capacity changes. We ensure timely renewal and help with expansion licenses.",
+        "Before applying, ensure factory premises compliance, NOCs, layout plan approval, and notification submission. Required documents include business identity, property, technical, and regulatory approvals.",
       features: [
-        "Annual License Renewal",
-        "Capacity Amendment",
-        "Additional Unit Registration",
-        "Compliance Certificate",
+        "Business identity documents",
+        "Property documents",
+        "Technical documents",
+        "Regulatory approvals",
+        "Factory layout plan",
+        "Emergency exit & safety measures",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: Building2,
+    },
+    {
+      id: 4,
+      badge: "Application Process",
+      title: "Step-by-Step Factory License Process",
+      description:
+        "Review eligibility, prepare documents, complete application form, pay fee, submit application, undergo site inspection, and receive license issuance. Renewal and amendments require timely notification and compliance.",
+      features: [
+        "Eligibility review",
+        "Document preparation",
+        "Application form completion",
+        "Fee payment & receipt",
+        "Submission & inspection",
+        "License issuance & renewal",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: FileText,
+    },
+    {
+      id: 5,
+      badge: "Fee & Validity",
+      title: "Factory License Fee & Validity",
+      description:
+        "Fees vary by factory size and power load. Validity is typically 1-5 years, with renewals required 30-60 days before expiry. Late renewal penalties apply, and changes require notification.",
+      features: [
+        "Small: ₹1,500 - ₹3,000",
+        "Medium: ₹3,000 - ₹7,500",
+        "Large: ₹7,500 - ₹15,000",
+        "Very Large: ₹15,000 - ₹25,000",
+        "Hazardous: 20-50% surcharge",
+        "Renewal & amendment process",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: ShieldCheck,
+    },
+    {
+      id: 6,
+      badge: "Why Choose Us",
+      title: "Why Choose CapEasy for Factory License?",
+      description:
+        "We simplify the complex process of Factory License registration with expert services, end-to-end support, regulatory compliance, inspection preparation, timely renewals, and post-registration assistance.",
+      features: [
+        "Industry experience",
+        "End-to-end support",
+        "Regulatory compliance",
+        "Inspection preparation",
+        "Timely renewals",
+        "Post-registration support",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1080",
@@ -150,14 +217,14 @@ export default function FactoryLicenses() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -189,7 +256,7 @@ export default function FactoryLicenses() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -199,7 +266,7 @@ export default function FactoryLicenses() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -230,7 +297,7 @@ export default function FactoryLicenses() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -243,14 +310,14 @@ export default function FactoryLicenses() {
               </button>
             </div>
 
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
 
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
 
@@ -258,7 +325,7 @@ export default function FactoryLicenses() {
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -314,7 +381,7 @@ export default function FactoryLicenses() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -332,7 +399,7 @@ export default function FactoryLicenses() {
 
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -355,7 +422,7 @@ export default function FactoryLicenses() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

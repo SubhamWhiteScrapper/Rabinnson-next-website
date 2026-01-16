@@ -1,8 +1,9 @@
 import Home from "./home/Home";
 
-// ---- SEO HEAD / METADATA ----
+
+
 export const metadata = {
-  title: "Home | Irisnex – AI-Powered Hiring",
+  title: "Rabinnson Private Limited",
   description:
     "Irisnex is an AI-powered hiring tool that analyzes resumes, calculates ATS scores, and helps you find the best candidates instantly.",
   metadataBase: new URL("https://www.irisnex.com"),

@@ -449,7 +449,7 @@ const EmploymentAgreement = () => {
                 </div>
               ))}
             </div>
-            <Link href="/contact" className="w-fit">
+            <Link href="/start-generating-your-idea" className="w-fit">
               <button className="mt-4 sm:mt-6 group px-5 sm:px-7 py-3 sm:py-3.5 border-2 border-slate-900 text-slate-900 rounded-lg hover:bg-slate-900 hover:text-white transition-all duration-300 flex items-center gap-2 w-fit hover:shadow-lg active:scale-95 text-sm sm:text-base">
                 Learn More{" "}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

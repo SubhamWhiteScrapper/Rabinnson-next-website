@@ -25,25 +25,25 @@ export default function PFRegistration() {
   const heroContent = {
     title: "PF Registration",
     description:
-      "Register for Provident Fund with EPFO. Provide retirement benefits to your employees with mandatory PF contribution.",
-    ctaText: "Register Now",
+      "Employee Provident Fund is a scheme under Employees’ Provident Funds and Miscellaneous Provisions Act, 1952 and is regulated by EPFO. It acts as a savings platform for the sake of social security for all the people working in Government, Private or Public Sector organisations. Employers need to register themselves under PF for contributing their and employees’ share of Provident Fund to the Employees’ Provident Fund Account.",
+    ctaText: "Request a Call Back",
     ctaLink: "/contact",
-    subText: "Get a Free Consultation & Compliance Checklist",
+    subText: "Have a Question? Request a Call back: +91-7011 808 002",
   };
 
   const introContent = {
-    badge: "PF Registration",
+    badge: "Provisions of PF",
     badgeIcon: Wallet,
-    title: "Secure Your Employees' Future",
-    subtitle: "Employee Provident Fund Organization",
+    title: "PF Registration Requirements & Benefits",
+    subtitle: "Secure Employee Savings & Compliance",
     description:
-      "PF registration is mandatory for establishments with 20 or more employees. It provides retirement savings, pension benefits, and insurance coverage for employees through the EPFO scheme.",
+      "Registration Requirement: All establishments employing 20 or more people must register with the PF Department. Voluntary Registration: Any establishment can register voluntarily to provide PF benefits. Saving of Employees: PF secures a percentage of earnings for future use. Benefits: Insurance, Death, Pension, and more. Contribution: 12% of Basic Salary + DA + Retaining Allowance by both Employee and Employer. Due Date: PF payments are due on the 15th of each month.",
     features: [
       "Mandatory for 20+ Employees",
-      "12% Employer Contribution",
-      "12% Employee Contribution",
-      "Tax Benefits under 80C",
-      "Pension & Insurance Coverage",
+      "Voluntary Registration Option",
+      "12% Employer & Employee Contribution",
+      "Insurance, Pension, Death Benefits",
+      "PF payments due by 15th monthly",
     ],
     image1:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +54,16 @@ export default function PFRegistration() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Registration Process",
-      title: "EPFO Employer Registration",
+      badge: "How We Help You",
+      title: "PF Registration & Compliance Support",
       description:
-        "We handle the complete PF registration with EPFO. From establishment code to employee enrollment and UAN generation.",
+        "Obtaining PF Registration, Assistance in PF Payment, Computation of PF, Payroll Management, Filing of PF Returns. Join 5,000+ Entrepreneurs benefiting from our expertise.",
       features: [
-        "Establishment Code Application",
-        "Digital Signature Setup",
-        "Employee Enrollment",
-        "UAN Generation",
+        "PF Registration Assistance",
+        "PF Payment Support",
+        "Payroll Management",
+        "PF Returns Filing",
+        "Expert Advisory (No external company names)",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +73,15 @@ export default function PFRegistration() {
     },
     {
       id: 2,
-      badge: "Monthly Compliance",
-      title: "PF Return Filing Support",
+      badge: "Process Steps",
+      title: "Process of PF Registration",
       description:
-        "PF requires monthly contribution deposits and annual returns. We ensure timely compliance with accurate calculations.",
+        "1. Registration on portal\n2. DSC Registration\n3. Filling of Application Form\n4. Submission of Application. After final submission, registration certificate is issued by the department.",
       features: [
-        "Monthly ECR Filing",
-        "Contribution Calculation",
-        "Challan Generation",
-        "Annual Return Filing",
+        "Portal Registration",
+        "DSC Registration",
+        "Application Form Filling",
+        "Final Submission & Certificate Issuance",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
@@ -92,15 +93,19 @@ export default function PFRegistration() {
     },
     {
       id: 3,
-      badge: "Employee Services",
-      title: "Employee Support & Transfers",
+      badge: "Eligibility & Documents",
+      title: "Who Should Register & Required Documents",
       description:
-        "We assist with employee PF services including transfers, withdrawals, and access to online services.",
+        "All establishments with 20+ employees (including contract workers) must register. Voluntary registration is also available. Documents required: PAN & Aadhaar of Proprietor/Partner/Director, PAN of Firm/Company/Society, Cancelled Cheque, Address Proof, Business Registration Documents, List of Employees.",
       features: [
-        "PF Transfer Assistance",
-        "Withdrawal Support",
-        "KYC Updates",
-        "Passbook Access Help",
+        "Mandatory for 20+ employees (including contract)",
+        "Voluntary registration option",
+        "PAN & Aadhaar of owners",
+        "PAN of entity",
+        "Cancelled Cheque",
+        "Address Proof",
+        "Business Registration Docs",
+        "List of Employees",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1080",
@@ -142,14 +147,14 @@ export default function PFRegistration() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +185,7 @@ export default function PFRegistration() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +195,7 @@ export default function PFRegistration() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +222,7 @@ export default function PFRegistration() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +233,20 @@ export default function PFRegistration() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +297,7 @@ export default function PFRegistration() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +313,7 @@ export default function PFRegistration() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +336,7 @@ export default function PFRegistration() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

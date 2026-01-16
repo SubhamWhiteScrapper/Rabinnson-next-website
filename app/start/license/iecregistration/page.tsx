@@ -34,16 +34,17 @@ export default function IECRegistration() {
   const introContent = {
     badge: "IEC Registration",
     badgeIcon: Globe,
-    title: "Your Gateway to Global Trade",
+    title: "Fast, Error-Free IEC Registration",
     subtitle: "Import Export Code by DGFT",
     description:
-      "Import Export Code (IEC) is a 10-digit unique code issued by the Directorate General of Foreign Trade (DGFT). It is mandatory for any business looking to import or export goods and services from India.",
+      "We ensure fast, error-free IEC registration and provide post-approval assistance for customs and compliance.",
     features: [
-      "Lifetime Validity",
-      "No Renewal Required",
-      "Mandatory for Import/Export",
-      "Enables Customs Clearance",
-      "Access to Global Markets",
+      "Document collection and eligibility verification",
+      "IEC application filing on the DGFT portal",
+      "Assistance with DSC (Digital Signature Certificate), if required",
+      "Retrieval and digital delivery of IEC certificate",
+      "Post-registration support for customs, bank, and export benefits linkage",
+      "Consultation By Expert",
     ],
     image1:
       "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80&w=1080",
@@ -142,14 +143,14 @@ export default function IECRegistration() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +181,7 @@ export default function IECRegistration() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +191,7 @@ export default function IECRegistration() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +218,7 @@ export default function IECRegistration() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +229,20 @@ export default function IECRegistration() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +293,7 @@ export default function IECRegistration() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +309,7 @@ export default function IECRegistration() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +332,7 @@ export default function IECRegistration() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

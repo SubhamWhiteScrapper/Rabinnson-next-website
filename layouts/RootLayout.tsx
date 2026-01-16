@@ -12,10 +12,15 @@ export default function RootLayout({ children }: PropsWithChildren) {
     const handleOpenMobileNav = () => {
         setOpenMobileNav(!openMobileNav);
     }
+
+    const handleCloseMobileNav = () => {
+        setOpenMobileNav(false);
+    }
+
     return (
         <div>
             {/* HEADER SECTION */}
-            <Header mobileOpen={openMobileNav} onOpenMobileNav={handleOpenMobileNav} />
+            <Header mobileOpen={openMobileNav} onOpenMobileNav={handleOpenMobileNav} onCloseMobileNav={handleCloseMobileNav} />
 
             <MobileNavigation open={openMobileNav} handleOpen={handleOpenMobileNav} />
 

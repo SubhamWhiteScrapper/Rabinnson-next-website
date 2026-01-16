@@ -25,7 +25,7 @@ export default function GSTRegistration() {
   const heroContent = {
     title: "GST Registration",
     description:
-      "Get your GST registration for seamless business operations. Legal recognition as a supplier with input tax credit benefits.",
+      "We simplify the process of obtaining Goods and Services Tax (GST) Registration, a mandatory requirement for businesses exceeding certain turnover thresholds or operating inter-state. Whether you're a product seller, service provider, freelancer, or e-commerce business, we ensure fast, compliant, and hassle-free GST onboarding. With a deep understanding of tax rules and portal processes, we ensure your business remains eligible for tax credits, avoids penalties, and gains a recognized GSTIN for seamless operations.",
     ctaText: "Register Now",
     ctaLink: "/contact",
     subText: "Get a Free Consultation & Compliance Checklist",
@@ -34,16 +34,21 @@ export default function GSTRegistration() {
   const introContent = {
     badge: "GST Registration",
     badgeIcon: Receipt,
-    title: "Simplify Your Tax Compliance",
-    subtitle: "Goods and Services Tax",
+    title: "What is GST Registration?",
+    subtitle: "Consultation By Expert",
     description:
-      "GST registration is mandatory for businesses with turnover above ₹40 lakhs (₹20 lakhs for services). It provides legal recognition, input tax credit benefits, and enables seamless interstate trade.",
+      "GST is an indirect tax in India that simplifies taxation on goods and services. Registration is mandatory for certain businesses, and non-compliance can result in penalties. It allows tax authorities to track transactions. Startup GST registration takes 2 to 6 working days via the official portal.",
     features: [
-      "Legal Recognition as Supplier",
-      "Input Tax Credit Benefits",
-      "Seamless Interstate Supply",
-      "Competitive Advantage",
-      "E-commerce Platform Access",
+      "Eligibility assessment and advisory on threshold applicability",
+      "Filing of GST application with accurate business and document details",
+      "Support in securing the GSTIN (GST Identification Number)",
+      "Post-registration services such as return filing, input tax credit guidance, and invoicing compliance",
+      "Specialized support for composition scheme, inter-state supply, and reverse charge applicability",
+      "GST application filing",
+      "Securing GST identification number",
+      "Documentation and eligibility support",
+      "Post registration support",
+      "Compliance maintenance",
     ],
     image1:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +59,18 @@ export default function GSTRegistration() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Registration Process",
-      title: "Quick GST Registration",
+      badge: "Eligibility for GST Registration",
+      title: "Who Needs GST Registration?",
       description:
-        "We handle the complete GST registration process on the GST portal. From application to ARN tracking and certificate download.",
+        "Companies – Businesses with an annual turnover above ₹40 lakhs (₹20 lakhs for special states). Service Providers – Those exceeding ₹20 lakhs per annum (₹10 lakhs for special states). Exempt Entities – Businesses dealing only in GST-exempt goods/services are not required to register. Migrated Businesses – Pre-registered entities under VAT, Excise, etc., must transition to GST. Inter-State Suppliers – Businesses supplying goods across different states. Casual Suppliers – Those making occasional taxable supplies. Reverse Charge Payers – Entities paying tax under the reverse charge mechanism.",
       features: [
-        "Application Preparation",
-        "Document Submission",
-        "ARN Tracking",
-        "GSTIN Issuance",
+        "Companies: Turnover above ₹40 lakhs (₹20 lakhs for special states)",
+        "Service Providers: Above ₹20 lakhs (₹10 lakhs for special states)",
+        "Exempt Entities: Only GST-exempt goods/services",
+        "Migrated Businesses: VAT/Excise to GST",
+        "Inter-State Suppliers",
+        "Casual Suppliers",
+        "Reverse Charge Payers",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +80,16 @@ export default function GSTRegistration() {
     },
     {
       id: 2,
-      badge: "Monthly Compliance",
-      title: "GST Return Filing Support",
+      badge: "GST Registration Turnover Limits",
+      title: "Turnover Thresholds & Voluntary Registration",
       description:
-        "GST requires monthly/quarterly return filing. We ensure timely and accurate filing of GSTR-1, GSTR-3B, and annual returns.",
+        "Voluntary Registration – Any business or individual can register for GST, regardless of turnover. However, it becomes mandatory upon crossing specific thresholds. Service Providers – Registration is required for businesses with an annual turnover exceeding ₹20 lakhs (₹10 lakhs for special category states). Goods Suppliers – Registration is mandatory for businesses with an annual turnover above ₹40 lakhs, provided they: Supply only goods and not services. Do not conduct intra-state sales in special category states (e.g., Arunachal Pradesh, Manipur, Meghalaya). Do not deal in restricted goods such as ice cream, pan masala, or tobacco. Other Businesses – The turnover threshold for GST registration is ₹20 lakhs (₹10 lakhs for special category states). Special Category States – Certain states like Arunachal Pradesh, Assam, and Jammu & Kashmir have lower turnover limits for mandatory registration.",
       features: [
-        "GSTR-1 Filing",
-        "GSTR-3B Filing",
-        "GSTR-9 Annual Return",
-        "ITC Reconciliation",
+        "Voluntary Registration: Any turnover",
+        "Service Providers: Above ₹20 lakhs (₹10 lakhs for special states)",
+        "Goods Suppliers: Above ₹40 lakhs",
+        "Special Category States: Lower limits",
+        "Restricted Goods: Ice cream, pan masala, tobacco",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1554224155-8d2a6c3d8925?auto=format&fit=crop&q=80&w=1080",
@@ -92,21 +101,42 @@ export default function GSTRegistration() {
     },
     {
       id: 3,
-      badge: "Advisory Services",
-      title: "GST Optimization & Advisory",
+      badge: "Documents Required",
+      title: "Documents Needed for GST Registration",
       description:
-        "Maximize your ITC benefits and ensure correct tax rates with our GST advisory. We help you stay compliant and optimize your tax position.",
+        "For online GST registration, the following documents are mandatory based on the business type: 1. Public/Private Limited Company: PAN Card, Certificate of Incorporation, MoA & AoA, ID & Address Proof, Photographs, Board Resolution, Bank Details, Business Address Proof. 2. Sole Proprietorship: PAN Card, Aadhar Card, Photograph, Bank Details, Business Address Proof. 3. Partnership Firm: PAN Card, Partnership Deed, Photographs, ID & Address Proof, Aadhar Card, Appointment Proof, Registration Certificate, Bank Details, Business Address Proof. 4. Hindu Undivided Family (HUF): PAN Card, Photograph, ID & Address Proof, Business Address Proof.",
       features: [
-        "ITC Optimization",
-        "HSN Classification",
-        "Rate Advisory",
-        "Audit Support",
+        "Company: PAN, Incorporation, MoA/AoA, ID/Address, Photos, Board Resolution, Bank, Address Proof",
+        "Sole Proprietorship: PAN, Aadhar, Photo, Bank, Address Proof",
+        "Partnership: PAN, Deed, Photos, ID/Address, Aadhar, Appointment, Registration, Bank, Address Proof",
+        "HUF: PAN, Photo, ID/Address, Address Proof",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
       imagePosition: "right",
       hasOverlappingImages: false,
       icon: Building2,
+    },
+    {
+      id: 4,
+      badge: "Benefits of GST",
+      title: "Why Register for GST?",
+      description:
+        "For Regular Registered Businesses: Avail Input Tax Credit (ITC) on purchases, Conduct inter-state trade without restrictions. For Composition Scheme Taxpayers: Lower compliance burden with simplified tax filing, Reduced tax liability with a fixed percentage tax rate, Minimal impact on working capital due to lower tax rates. For Voluntary GST Registration (Turnover Below ₹40 Lakhs): Claim Input Tax Credit to reduce tax burden, Seamless inter-state business operations without restrictions.",
+      features: [
+        "Input Tax Credit (ITC) on purchases",
+        "Inter-state trade without restrictions",
+        "Lower compliance for composition scheme",
+        "Reduced tax liability",
+        "Minimal impact on working capital",
+        "Claim ITC below ₹40 lakhs turnover",
+        "Seamless inter-state operations",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "right",
+      hasOverlappingImages: false,
+      icon: Check,
     },
   ];
 
@@ -142,14 +172,14 @@ export default function GSTRegistration() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +210,7 @@ export default function GSTRegistration() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +220,7 @@ export default function GSTRegistration() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +247,7 @@ export default function GSTRegistration() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +258,20 @@ export default function GSTRegistration() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +322,7 @@ export default function GSTRegistration() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +338,7 @@ export default function GSTRegistration() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +361,7 @@ export default function GSTRegistration() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

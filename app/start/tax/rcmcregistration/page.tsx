@@ -25,8 +25,8 @@ export default function RCMCRegistration() {
   const heroContent = {
     title: "RCMC Registration",
     description:
-      "Get Registration cum Membership Certificate for export benefits. Access export promotion schemes and duty drawback incentives.",
-    ctaText: "Register Now",
+      "Get your Registration-Cum-Membership Certificate (RCMC)—a mandatory registration under India's Foreign Trade Policy for businesses exporting regulated goods or seeking trade benefits. Issued by Export Promotion Councils (EPCs), the RCMC serves as both an authorization and a gateway to financial incentives, subsidies, and global trade support. We help streamline your export readiness by ensuring you're correctly registered with the relevant EPC or Commodity Board.",
+    ctaText: "Request a Call Back",
     ctaLink: "/contact",
     subText: "Get a Free Consultation & Compliance Checklist",
   };
@@ -34,16 +34,16 @@ export default function RCMCRegistration() {
   const introContent = {
     badge: "RCMC Registration",
     badgeIcon: Ship,
-    title: "Unlock Export Benefits",
+    title: "RCMC Registration: A Key Authorization for Exporters",
     subtitle: "Registration cum Membership Certificate",
     description:
-      "RCMC (Registration cum Membership Certificate) is issued by Export Promotion Councils and is essential for exporters to avail benefits under the Foreign Trade Policy including duty drawback, EPCG scheme, and other export incentives.",
+      "RCMC (Registration-Cum-Membership Certificate) is a mandatory authorization under the Foreign Trade Policy (FTP) for businesses involved in the import or export of restricted products. It also acts as proof of an exporter's registration with an Export Promotion Council (EPC), commodity board, or export development authority.",
     features: [
-      "Export Promotion Scheme Access",
-      "Duty Drawback Benefits",
-      "EPCG Scheme Eligibility",
-      "Export Council Membership",
-      "Foreign Trade Policy Benefits",
+      "Essential for import/export of restricted goods under FTP",
+      "Required to avail concessions and benefits outlined in FTP",
+      "Official membership proof with an EPC or commodity board",
+      "Access to export promotion schemes and incentives",
+      "Guidance on renewals, product classification, and trade codes",
     ],
     image1:
       "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +54,16 @@ export default function RCMCRegistration() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Council Selection",
-      title: "Choose the Right Export Council",
+      badge: "Our Services",
+      title: "RCMC Registration Services",
       description:
-        "We help you identify the appropriate Export Promotion Council based on your export products and prepare the membership application.",
+        "• Identification of appropriate Export Promotion Council based on trade category\n• Documentation and application filing with the EPC/Commodity Board\n• Guidance on renewals, product classification, and trade codes (ITC-HS codes)\n• Liaison support for compliance queries or verification\n• Advisory on accessing DGFT schemes and FTP-linked benefits",
       features: [
-        "Product-Based Council Selection",
-        "Eligibility Assessment",
-        "Document Preparation",
-        "Application Filing",
+        "Export Council Identification",
+        "Documentation & Application Filing",
+        "Renewals & Product Classification Guidance",
+        "Compliance Liaison Support",
+        "DGFT/FTP Benefits Advisory",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +73,15 @@ export default function RCMCRegistration() {
     },
     {
       id: 2,
-      badge: "Certificate Issuance",
-      title: "RCMC Certificate Processing",
+      badge: "Membership Types",
+      title: "Types of RCMC Membership",
       description:
-        "We track your application and ensure timely issuance of RCMC. The certificate is linked to your IEC for seamless benefit claims.",
+        "Ordinary Membership: For businesses new to exports/imports, providing foundational status. Associate Membership: For experienced exporters/importers with a proven track record. Choosing the right membership ensures compliance and access to export promotion schemes.",
       features: [
-        "Application Tracking",
-        "Certificate Issuance",
-        "IEC Linking",
-        "Validity Management",
+        "Ordinary Membership: For new exporters/importers",
+        "Associate Membership: For experienced traders",
+        "Compliance with FTP requirements",
+        "Access to export promotion schemes",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1570126618953-d437176e8c79?auto=format&fit=crop&q=80&w=1080",
@@ -92,15 +93,16 @@ export default function RCMCRegistration() {
     },
     {
       id: 3,
-      badge: "Benefits & Renewal",
-      title: "Maximize Export Benefits",
+      badge: "Eligibility & Process",
+      title: "Eligibility for RCMC Registration",
       description:
-        "Once registered, we help you apply for various export benefits and ensure timely renewal of your RCMC.",
+        "To apply for RCMC registration online, businesses must: (1) Be engaged in import/export activities; (2) Have applied for an Import Export Code (IEC) from DGFT; (3) Declare their main business line and consult the relevant board if available; (4) If no board exists, mention this in the application and seek FIEO approval. Meeting these conditions ensures smooth processing and compliance.",
       features: [
-        "Benefit Applications",
-        "Scheme Utilization",
-        "Annual Renewal",
-        "Council Services Access",
+        "Exporter or Merchant engaged in import/export",
+        "IEC from DGFT required",
+        "Main business line declaration",
+        "Consultation with relevant board if available",
+        "FIEO approval if no board exists",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1080",
@@ -142,14 +144,14 @@ export default function RCMCRegistration() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]"  />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2"  />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +182,7 @@ export default function RCMCRegistration() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +192,7 @@ export default function RCMCRegistration() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +219,7 @@ export default function RCMCRegistration() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +230,20 @@ export default function RCMCRegistration() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -292,7 +294,7 @@ export default function RCMCRegistration() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +310,7 @@ export default function RCMCRegistration() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +333,7 @@ export default function RCMCRegistration() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}

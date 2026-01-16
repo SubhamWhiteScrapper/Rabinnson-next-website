@@ -25,7 +25,7 @@ export default function ESICRegistration() {
   const heroContent = {
     title: "ESIC Registration",
     description:
-      "Register for Employee State Insurance Corporation. Provide medical and cash benefits to your employees with ESIC coverage.",
+      "Employee State Insurance Scheme is one among the most popular schemes for self-financing social security and health of Indian workers. The scheme is administered and regulated by an autonomous and self-financing social security and labour welfare organisation ESIC (Employee State Insurance Corporation) basis the rules and regulations as per the Indian ESI Act, 1948.",
     ctaText: "Register Now",
     ctaLink: "/contact",
     subText: "Get a Free Consultation & Compliance Checklist",
@@ -34,16 +34,16 @@ export default function ESICRegistration() {
   const introContent = {
     badge: "ESIC Registration",
     badgeIcon: HeartPulse,
-    title: "Comprehensive Employee Healthcare",
-    subtitle: "Employee State Insurance Corporation",
+    title: "Legal Provisions & Benefits of ESI",
+    subtitle: "Employee State Insurance Act, 1948",
     description:
-      "ESIC registration is mandatory for establishments with 10 or more employees. It provides comprehensive medical benefits, sickness benefits, maternity benefits, and disablement benefits to covered employees and their families.",
+      "Registration Requirement: Employers must register their Factory/Establishment under the ESI Act within 15 days of crossing 10 employees. Contribution: 5% split as 4% employer, 1% employee. Employees Covered: Monthly wage ≤ INR 21,000. Due Date: Contribution paid within 15 days of month end. Benefits: Medical, monetary, maternity, disability, and old age care for employees and families.",
     features: [
-      "Mandatory for 10+ Employees",
-      "Medical Benefits for Family",
-      "Sickness & Maternity Benefits",
-      "Disability Coverage",
-      "Low Contribution Rate",
+      "Statutory registration for 10+ employees",
+      "5% contribution (4% employer, 1% employee)",
+      "Covers employees ≤ INR 21,000/month",
+      "Wide range of medical & monetary benefits",
+      "Maternity benefits for women",
     ],
     image1:
       "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1080",
@@ -54,15 +54,15 @@ export default function ESICRegistration() {
   const scrollSections = [
     {
       id: 1,
-      badge: "Registration Process",
-      title: "Quick ESIC Registration",
+      badge: "Process of ESI Registration",
+      title: "Step-by-Step ESI Registration",
       description:
-        "We handle the complete ESIC registration with the regional ESIC office. From employer registration to employee enrollment.",
+        "1. Registration on portal 2. DSC Registration 3. Filling of Application Form 4. Submission of Application. After final submission, registration certificate is issued by the department.",
       features: [
-        "Employer Code Application",
-        "Employee Registration",
-        "ESIC Portal Setup",
-        "Contribution Calculation",
+        "Portal registration",
+        "DSC registration",
+        "Application form filling",
+        "Final submission & certificate issuance",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1080",
@@ -72,15 +72,14 @@ export default function ESICRegistration() {
     },
     {
       id: 2,
-      badge: "Compliance Management",
-      title: "Monthly Compliance Support",
+      badge: "Who Should Register?",
+      title: "ESI Registration Applicability",
       description:
-        "ESIC requires monthly contribution deposits and half-yearly returns. We ensure timely compliance and accurate filings.",
+        "ESI Registration is required when a company/firm/organisation employs 10 or more persons, with individual wage/salary ≤ INR 21,000/month. ESIC gives recognition via a 17-digit unique code.",
       features: [
-        "Monthly Contribution Filing",
-        "Half-Yearly Returns",
-        "Employee Addition/Deletion",
-        "Challan Generation",
+        "Required for 10+ employees",
+        "Wage ≤ INR 21,000/month",
+        "17-digit ESIC code issued",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1080",
@@ -92,21 +91,46 @@ export default function ESICRegistration() {
     },
     {
       id: 3,
-      badge: "Benefits Management",
-      title: "Help Employees Claim Benefits",
+      badge: "Why Get ESI Registration?",
+      title: "Benefits of ESI Registration",
       description:
-        "We assist your employees in understanding and claiming their ESIC benefits including medical reimbursements and cash benefits.",
+        "Medical benefits for employees & families, sickness benefits @70% salary for up to 91 days/year, maternity benefits (3 months paid leave), 90% salary to dependents in case of death, old age care, disability benefits @90% salary.",
       features: [
-        "Claims Assistance",
-        "Hospital Empanelment Info",
-        "Benefit Awareness",
-        "Grievance Resolution",
+        "Medical benefits for employees & families",
+        "Sickness benefits @70% salary",
+        "Maternity benefits (3 months paid leave)",
+        "90% salary to dependents (death)",
+        "Old age care & disability benefits",
       ],
       imageUrl1:
         "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1080",
       imagePosition: "right",
       hasOverlappingImages: false,
       icon: Building2,
+    },
+    {
+      id: 4,
+      badge: "Documents Required",
+      title: "Checklist for ESI Registration",
+      description:
+        "Registration Certificate (Factories/Shops Act), Certificate of Incorporation/Partnership Deed, List of shareholders/directors, MOA & AOA, Cancelled Cheque, Address Proof, PAN Card, Bank Statement, Attendance Register, Employees PAN Card, Compensation Details, List of all employees.",
+      features: [
+        "Registration Certificate (Factories/Shops Act)",
+        "Certificate of Incorporation/Partnership Deed",
+        "List of shareholders/directors",
+        "MOA & AOA",
+        "Cancelled Cheque",
+        "Address Proof, PAN, Bank Statement",
+        "Attendance Register",
+        "Employees PAN Card",
+        "Compensation Details",
+        "List of all employees",
+      ],
+      imageUrl1:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1080",
+      imagePosition: "left",
+      hasOverlappingImages: false,
+      icon: ShieldCheck,
     },
   ];
 
@@ -142,14 +166,14 @@ export default function ESICRegistration() {
   return (
     <>
       <HeroBackground>
-        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
-          <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">
-            <div className="flex flex-col items-start gap-[12px] pt-[24px]">
+        <div className="w-full lg:w-[60%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-18 lg:gap-40">
+          <div className="w-full flex flex-col items-start lg:items-center gap-6">
+            <div className="flex flex-col items-start gap-3 pt-6">
               <div className="flex items-center">
-                <Image src={Avatar1} alt="Avatar1" className="w-[32px]"  />
-                <Image src={Avatar2} alt="Avatar2" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar3} alt="Avatar3" className="w-[32px] ml-[-8px]"  />
-                <Image src={Avatar4} alt="Avatar4" className="w-[32px] ml-[-8px]" />
+                <Image src={Avatar1} alt="Avatar1" className="w-8"  />
+                <Image src={Avatar2} alt="Avatar2" className="w-8 -ml-2"  />
+                <Image src={Avatar3} alt="Avatar3" className="w-8 -ml-2"  />
+                <Image src={Avatar4} alt="Avatar4" className="w-8 -ml-2" />
               </div>
               <Typography color="#fff" noDarkMode className="md:hidden">
                 Trusted by Founders
@@ -180,7 +204,7 @@ export default function ESICRegistration() {
               {heroContent.description}
             </Typography>
             <Link href={heroContent.ctaLink}>
-              <Button variant="primary" className="mt-[32px]">
+              <Button variant="primary" className="mt-8">
                 {heroContent.ctaText}
               </Button>
             </Link>
@@ -190,7 +214,7 @@ export default function ESICRegistration() {
           </div>
         </div>
       </HeroBackground>
-      <div className="w-full h-32 bg-gradient-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
+      <div className="w-full h-32 bg-linear-to-b from-transparent to-white -mt-32 relative z-10 pointer-events-none" />
       <div className="min-h-screen bg-white relative z-20">
         <div className="container mx-auto px-6 py-12 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -217,7 +241,7 @@ export default function ESICRegistration() {
               <div className="space-y-3">
                 {introContent.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <p className="text-slate-700">{feature}</p>
@@ -228,20 +252,20 @@ export default function ESICRegistration() {
                 Get Started
               </button>
             </div>
-            <div className="relative h-[500px] lg:h-[700px] w-full">
-              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
+            <div className="relative h-125 lg:h-175 w-full">
+              <div className="absolute top-10 right-10 w-64 h-64 lg:w-72 lg:h-72 bg-linear-to-br from-blue-400 to-indigo-400 rounded-3xl opacity-20 blur-3xl" />
               <div className="absolute top-0 right-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 z-10">
                 <ImageWithFallback
                   src={introContent.image1}
                   alt="Intro visual 1"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
               <div className="absolute bottom-10 lg:bottom-20 left-0 w-[80%] lg:w-96 rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500 border-8 border-white z-20">
                 <ImageWithFallback
                   src={introContent.image2}
                   alt="Intro visual 2"
-                  className="w-full h-80 lg:h-[450px] object-cover"
+                  className="w-full h-80 lg:h-112.5 object-cover"
                 />
               </div>
             </div>
@@ -249,15 +273,7 @@ export default function ESICRegistration() {
         </div>
       </div>
       <div className="bg-white min-h-screen">
-        <div className="max-w-6xl mx-auto px-6 lg:px-12 pt-16 pb-8 text-center">
-          <h1 className="text-3xl lg:text-4xl font-semibold text-slate-900 mb-3">
-            How We Help You
-          </h1>
-          <p className="text-slate-600 max-w-xl mx-auto text-sm lg:text-base">
-            From registration to compliance and benefits management, we are with
-            you at every step.
-          </p>
-        </div>
+        
         <div className="relative">
           {scrollSections.map((section, index) => {
             const Icon = section.icon;
@@ -292,7 +308,7 @@ export default function ESICRegistration() {
                       <div className="space-y-3 pt-2">
                         {section.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center gap-3">
-                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center flex-shrink-0">
+                            <div className="w-5 h-5 rounded-full bg-slate-900 flex items-center justify-center shrink-0">
                               <Check className="w-3 h-3 text-white" />
                             </div>
                             <p className="text-slate-700 text-sm lg:text-base">
@@ -308,7 +324,7 @@ export default function ESICRegistration() {
                     </div>
                     <div className={`${isEven ? "md:order-1" : ""}`}>
                       {section.hasOverlappingImages ? (
-                        <div className="relative h-[420px] md:h-[480px] lg:h-[540px]">
+                        <div className="relative h-105 md:h-120 lg:h-135">
                           <div className="absolute top-0 right-12 w-[65%] h-[60%] rounded-2xl overflow-hidden shadow-xl z-10">
                             <ImageWithFallback
                               src={section.imageUrl1}
@@ -331,7 +347,7 @@ export default function ESICRegistration() {
                           </div>
                         </div>
                       ) : (
-                        <div className="relative h-[320px] md:h-[420px] lg:h-[520px]">
+                        <div className="relative h-80 md:h-105 lg:h-130">
                           <div className="rounded-2xl overflow-hidden shadow-2xl w-full h-full">
                             <ImageWithFallback
                               src={section.imageUrl1}
