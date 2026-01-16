@@ -5,7 +5,7 @@ import gsap from "gsap";
 
 import Image from "next/image";
 import Navigation from "./Navigation";
-import Logo from '@/assets/images/a.png';
+const Logo = "/a.png";
 
 import Icons from "@/components/icon";
 
@@ -69,7 +69,7 @@ export default function Header({ mobileOpen = false, onOpenMobileNav, onCloseMob
             ${hasScrolled ? "bg-[#070707]" : ""}
         `}>
             <Link href="/" className="w-[40%] lg:w-[15%] cursor-pointer" onClick={() => { /* close nav when clicking logo */ onCloseMobileNav?.(); }}>
-                <Image src={Logo} alt="Logo" />
+                <Image src={Logo} alt="Logo" width={200} height={60} className="w-full h-auto" />
             </Link>
             <Navigation />
             <div className="hidden lg:flex justify-between items-center gap-4 xl:gap-8">

@@ -11,6 +11,7 @@ import Avatar2 from '@/assets/images/avatar-2.png';
 import Avatar3 from '@/assets/images/avatar-3.png';
 import Avatar4 from '@/assets/images/avatar-4.png';
 
+
 const StartGeneratingIdeaPage = () => {
 
     const heroContent = {
@@ -22,6 +23,8 @@ const StartGeneratingIdeaPage = () => {
 
     return (
         <>
+            
+
             <HeroBackground>
                 <div className="w-full lg:w-[80%] lg:mx-auto flex flex-col items-start lg:items-center lg:text-center justify-center gap-[72px] lg:gap-[160px]">
                     <div className="w-full flex flex-col items-start lg:items-center gap-[24px]">

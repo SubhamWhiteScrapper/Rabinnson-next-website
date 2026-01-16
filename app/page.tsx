@@ -1,52 +1,74 @@
 import Home from "./home/Home";
+import type { Metadata } from "next";
 
-
-
-export const metadata = {
-  title: "Rabinnson Private Limited",
+export const metadata: Metadata = {
+  title: "Rabinnson Private Limited - Business Solutions & Services",
   description:
-    "Irisnex is an AI-powered hiring tool that analyzes resumes, calculates ATS scores, and helps you find the best candidates instantly.",
-  metadataBase: new URL("https://www.irisnex.com"),
+    "Rabinnson Private Limited offers comprehensive business services including company registration, compliance, legal documentation, tax filing, licensing, and digital platforms across all industries in India.",
+  metadataBase: new URL("https://www.rabinnson.com"),
   alternates: {
-    canonical: "https://www.irisnex.com",
+    canonical: "/",
   },
   keywords: [
-    "AI hiring tool",
-    "resume analyzer",
-    "ATS resume checker",
-    "automated recruitment",
-    "AI job matching",
-    "AI HR software",
-    "resume parsing",
-    "applicant tracking system",
-    "Irisnex",
-    "AI powered hiring",
+    // Core Business Services
+    "business registration India",
+    "company incorporation",
+    "LLP registration",
+    "sole proprietorship",
+    "startup registration",
+    // Legal & Compliance
+    "legal documentation",
+    "business compliance",
+    "contract drafting",
+    "employment agreements",
+    "privacy policy drafting",
+    // Tax Services
+    "GST registration",
+    "tax filing India",
+    "PAN TAN application",
+    "income tax filing",
+    // Licensing
+    "FSSAI license",
+    "import export license",
+    "trademark registration",
+    "MSME registration",
+    // Platforms
+    "payment gateway integration",
+    "business management platform",
+    "invoicing software",
+    // Industries
+    "financial services consulting",
+    "healthcare IT solutions",
+    "EdTech solutions India",
+    // Brand
+    "Rabinnson Private Limited",
+    "business solutions India",
   ],
   openGraph: {
-    title: "Irisnex – AI-Powered Hiring Platform",
+    title: "Rabinnson Private Limited - Business Solutions & Services",
     description:
-      "Irisnex helps companies hire faster with AI resume matching, parsing, and ATS scoring.",
-    url: "https://www.irisnex.com",
-    siteName: "Irisnex",
+      "Complete business services: Company registration, compliance, legal documentation, tax filing, licensing & digital platforms. Trusted by businesses across India.",
+    url: "https://www.rabinnson.com",
+    siteName: "Rabinnson Private Limited",
     images: [
       {
-        url: "https://www.irisnex.com/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Irisnex AI hiring dashboard",
+        alt: "Rabinnson Private Limited - Business Solutions",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Irisnex – AI Hiring Tool",
+    title: "Rabinnson Private Limited - Business Solutions",
     description:
-      "Find the best candidates with Irisnex, an AI-driven resume matching and ATS scoring platform.",
-    site: "@irisnex",
-    creator: "@irisnex",
-    images: ["https://www.irisnex.com/og-image.png"],
+      "Complete business services: Registration, compliance, legal, tax & digital platforms. Trusted by businesses across India.",
+    site: "@rabinnson",
+    creator: "@rabinnson",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -59,9 +81,20 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  category: "Technology",
+  category: "Business Services",
+  authors: [{ name: "Rabinnson Private Limited" }],
+  creator: "Rabinnson Private Limited",
+  publisher: "Rabinnson Private Limited",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  other: {
+    "geo.region": "IN",
+    "geo.placename": "India",
+  },
 };
-
 
 export default function HomePage() {
   return (

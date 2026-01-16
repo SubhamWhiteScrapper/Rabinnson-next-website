@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Rabinnson Private Limited",
   description: "Rabinnson Private Limited is a leading provider of business solutions.",
   icons: {
-    icon: "/assets/images/a.png",
+    icon: "/a.png",
   },
 };
 
@@ -32,11 +32,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LayoutWithoutFooter/>
+        <LayoutWithoutFooter />
         {children}
-        <Footer/>
-        
-        
+        <Footer />
+
+
       </body>
     </html>
   );
